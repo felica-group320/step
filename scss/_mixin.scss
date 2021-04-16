@@ -1,0 +1,28 @@
+$pc: 960px; // PC
+$tab: 599px; // タブレット
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+$base-color:#fff;
+$main-color:#44768c;
+$sub-color: #b9dfec;
+$accent-color:#f3e42b;
+$txt-color:#333;
+
