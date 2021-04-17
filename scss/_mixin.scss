@@ -1,19 +1,39 @@
-$pc: 960px; // PC
-$tab: 599px; // タブレット
+$tab4: 800px; // タブレット
+$tab3: 700px; // タブレット
+$tab2: 600px; // タブレット
+$tab: 500px; // タブレット
 
 @mixin pc {
-  @media (min-width: ($pc)) {
+  @media (max-width: ($tab4)) {
+    @content;
+  }
+}
+@mixin tab3 {
+  @media (max-width: ($tab3)) {
+    @content;
+  }
+}@mixin tab2 {
+  @media (max-width: ($tab2)) {
     @content;
   }
 }
 @mixin tab {
-  @media (min-width: ($tab)) {
+  @media (max-width: ($tab)) {
     @content;
   }
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 10px;
+  @include tab3{
+    font-size: calc(10px * (7 / 8));
+  }
+  @include tab2{
+    font-size: calc(10px * (6 / 8));
+  }
+  @include tab{
+    font-size: calc(10px * (5 / 8));
+  }
 }
 
 body{
@@ -25,4 +45,3 @@ $main-color:#44768c;
 $sub-color: #b9dfec;
 $accent-color:#f3e42b;
 $txt-color:#333;
-
