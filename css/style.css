@@ -272,3 +272,56 @@ html {
 body {
   font-family: 'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
 }
+
+.key-visual {
+  margin: 0 12rem 7.1rem;
+  max-width: 168rem;
+  max-height: 100rem;
+  position: relative;
+}
+
+.key-visual img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -2;
+}
+
+.key-visual h2 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  background: #fff;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  padding: 0.7rem 3rem;
+  color: #333;
+}
+
+.key-visual h2::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #44768c;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  z-index: -1;
+}
+
+.key-visual h2::after {
+  content: "";
+  display: block;
+  width: 750px;
+  height: 4px;
+  background: #f3e42b;
+  position: absolute;
+  bottom: 9.8rem;
+  z-index: 1;
+}
+
+.key-visual h2 span {
+  padding-left: 11.1rem;
+}

@@ -52,7 +52,7 @@
 #3-template03
 #4-template04
 #5
-#6
+#6-inoue-ContactPage-KeyVisual
 #7
 #8
 #9
