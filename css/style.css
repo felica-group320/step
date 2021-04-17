@@ -271,35 +271,36 @@ html {
 
 body {
   font-family: 'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  padding: 0 12rem;
 }
 
 .key-visual {
-  margin: 0 12rem 7.1rem;
+  margin: 0 0 7.1rem;
   max-width: 168rem;
   max-height: 100rem;
   position: relative;
 }
 
-.key-visual img {
+.key-visual > img {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: -2;
 }
 
-.key-visual h2 {
+.key-visual > h2 {
   font-size: 6.4rem;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.4;
   background: #fff;
   position: absolute;
   bottom: 3rem;
   left: 3rem;
-  padding: 0.7rem 3rem;
+  padding: 0.9rem 3rem 0.6rem;
   color: #333;
 }
 
-.key-visual h2::before {
+.key-visual > h2::before {
   content: "";
   display: block;
   width: 100%;
@@ -311,7 +312,7 @@ body {
   z-index: -1;
 }
 
-.key-visual h2::after {
+.key-visual > h2::after {
   content: "";
   display: block;
   width: 750px;
@@ -322,6 +323,123 @@ body {
   z-index: 1;
 }
 
-.key-visual h2 span {
+.key-visual > h2 > span {
   padding-left: 11.1rem;
+  line-height: 1.5;
+}
+
+.price-table > h3 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  color: #44768c;
+  margin-bottom: 6.5rem;
+}
+
+.price-table > h3 > span {
+  display: block;
+  font-size: 3.2rem;
+  color: #333;
+  line-height: 0.4;
+}
+
+.price-table .table-container {
+  height: 100vh;
+}
+
+.price-table .table-container table {
+  border-collapse: collapse;
+  position: relative;
+  background: #fff;
+}
+
+.price-table .table-container table::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(/step/img/mizutama.gif);
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  z-index: -1;
+}
+
+.price-table .table-container table tr:nth-of-type(2) > td::after {
+  width: 42.8rem;
+  left: 32rem;
+}
+
+.price-table .table-container table tr:nth-of-type(3) > td::after {
+  width: 55rem;
+  left: 27rem;
+}
+
+.price-table .table-container table tr:nth-of-type(4) > td::after {
+  width: 37.8rem;
+  left: 34rem;
+}
+
+.price-table .table-container table tr:nth-of-type(5) > td::after {
+  width: 38.2rem;
+  left: 34rem;
+}
+
+.price-table .table-container table tr:nth-of-type(6) > td::after {
+  width: 42.8rem;
+  left: 32rem;
+}
+
+.price-table .table-container table tr:nth-of-type(7) > td::after {
+  width: 40.3rem;
+  left: 33rem;
+}
+
+.price-table .table-container table tr:nth-of-type(8) > td::after {
+  width: 48.9rem;
+  left: 29rem;
+}
+
+.price-table .table-container table tr:nth-of-type(9) > td::after {
+  width: 18.1rem;
+  left: 42rem;
+}
+
+.price-table .table-container table tr th {
+  width: 102.4rem;
+  height: 11.2rem;
+  background: #44768c;
+  font-size: 5.3rem;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.price-table .table-container table tr th + th {
+  width: 65.6rem;
+  background: #b9dfec;
+}
+
+.price-table .table-container table tr td {
+  height: 11.2rem;
+  font-size: 3.7rem;
+  color: #333;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+
+.price-table .table-container table tr td::after {
+  content: "";
+  display: block;
+  width: 55rem;
+  height: 1px;
+  background: #f3e42b;
+  position: absolute;
+  bottom: 2rem;
+  z-index: 1;
+}
+
+.price-table .table-container table tr td + td::after {
+  content: "";
+  display: none;
 }

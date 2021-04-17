@@ -34,10 +34,13 @@ html {
   @include tab{
     font-size: calc(10px * (5 / 8));
   }
+  // background-image: url(/step/img/contact-pc/contact_pc.jpg);
 }
 
 body{
   font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  padding: 0 12rem;
+  // opacity: 0.4;
 }
 
 $base-color:#fff;
