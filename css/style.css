@@ -443,3 +443,103 @@ body {
   content: "";
   display: none;
 }
+
+.about-us > main > .key-visual {
+  margin: 0 auto 9rem;
+  padding: 0 12rem;
+}
+
+.about-us > main > .key-visual > .key-visual-wrapper {
+  max-width: 168rem;
+  max-height: 100rem;
+  position: relative;
+}
+
+.about-us > main > .key-visual > .key-visual-wrapper > h2 {
+  background-color: #fff;
+  max-width: 81rem;
+  font-size: 6.4rem;
+  font-weight: bold;
+  padding: 0.6rem 11rem 0.7rem;
+  line-height: 1.4;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  vertical-align: center;
+  color: #333;
+}
+
+.about-us > main > .key-visual > .key-visual-wrapper > h2 > span {
+  display: block;
+  text-align: right;
+  padding-left: 7rem;
+}
+
+.about-us > main > .key-visual > .key-visual-wrapper > h2::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #44768c;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  z-index: -3;
+}
+
+.about-us > main > .key-visual > .key-visual-wrapper > h2::after {
+  display: block;
+  content: "";
+  max-width: 59rem;
+  height: 0.4rem;
+  background-color: #f3e42b;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.about-us > main > .key-visual > .key-visual-wrapper > img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -5;
+}
+
+.about-us > main > .philosophy {
+  max-width: 192rem;
+  max-height: 83rem;
+  background: url(/step/img/about-us-pc/step.jpg) no-repeat center center/cover;
+  margin: 0 auto 7.1rem;
+  padding: 4.2rem 12rem 4.9rem;
+}
+
+.about-us > main > .philosophy > h3 {
+  font-size: 10rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.about-us > main > .philosophy > ul > li {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.about-us > main > .philosophy > ul > li:first-of-type {
+  padding: 0 0 17.3rem 9rem;
+}
+
+.about-us > main > .philosophy > ul > li:nth-of-type(2) {
+  padding: 0 0 17.3rem 23rem;
+}
+
+.about-us > main > .philosophy > ul > li:last-of-type {
+  padding-left: 45rem;
+}
+
+.about-us > main > .philosophy > ul > li:nth-of-type(2-n) {
+  margin-bottom: 17.3rem;
+}
