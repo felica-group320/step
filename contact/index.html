@@ -11,117 +11,128 @@
   <link rel="shortcut icon" href="/step/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="192x192" href="/step/img/touch_icon.png">
 </head>
-<body class="contact-page">
+<body>
 
   <!-- 井上部分 -->
   <header>
     <nav class="g-nav"></nav>
   </header>
 
-  <div class="key-visual">
-    <img src="/step/img/contact-pc/contact.jpg" alt="" width="1680" height="1000">
-    <h2>CONTACT<br><span>料金表＆お問い合わせ</span></h2>
+  <main class="contact-page">
+    <div class="key-visual">
+      <img src="/step/img/contact-pc/contact.jpg" alt="" width="1680" height="1000">
+      <h2>CONTACT<br><span>料金表＆お問い合わせ</span></h2>
+    </div>
+  
+    <article class="price-table">
+      <h3>PRICE TABLE<br><span>料金表</span></h3>
+      <div class="table-container">
+        <table>
+          <tr>
+            <th>ご依頼内容</th><th>費用</th>
+          </tr>
+          <tr>
+            <td>パソコンサイトの制作</td><td>275,000円〜(税別)</td>
+          </tr>
+          <tr>
+            <td>スマートフォンサイトの制作</td><td>175,000円〜(税別)</td>
+          </tr>
+          <tr>
+            <td>ランディングページ</td><td>500,000円〜(税別)</td>
+          </tr>
+          <tr>
+            <td>WordPressの設定</td><td>150,000円〜(税別)</td>
+          </tr>
+          <tr>
+            <td>アニメーションの設定</td><td>50,000円〜(税別)</td>
+          </tr>
+          <tr>
+            <td>Web広告の運用代行</td><td>50,000円〜(税別)</td>
+          </tr>
+          <tr>
+            <td>Web解析レポートの作成</td><td>30,000円(税別)</td>
+          </tr>
+          <tr>
+            <td>SEO対策</td><td>200,000円〜(税別)</td>
+          </tr>
+        </table>
+      </div>
+    </article>
+  
+    <article class="contact">
+      <h3>CONTACT<br><span>お問い合わせ＆お見積り依頼</span></h3>
+      <div class="contact-container">
+        <dl>
+          <dt><span>※</span>お問い合わせ内容</dt>
+          <small>この項目は記入必須です。</small>
+          <dd>
+            <select name="item">
+              <option value="お仕事依頼">お仕事依頼</option>
+              <option value="グッズについて">グッズについて</option>
+              <option value="その他">その他</option>
+            </select>
+          </dd>
+          <dt><span>※</span>お名前(漢字)</dt>
+          <dd><input type="text" name="name" required placeholder="お名前をご入力下さい（必須）"></dd>
+          <dt><span>※</span>お名前(カナ)</dt>
+          <dd><input type="text" name="name" required placeholder="お名前をご入力下さい（必須）"></dd>
+          <dt><span>※</span>メールアドレス</dt>
+          <dd><input type="email" name="email" required placeholder="メールアドレスをご入力下さい（必須）"></dd>
+          <dt><span>※</span>メールアドレス再入力</dt>
+          <dd><input type="email" name="email" required placeholder="もう一度メールアドレスをご入力下さい（必須）"></dd>
+          <dt><span>※</span>お問い合わせ内容</dt>
+          <dd><textarea name="message" required placeholder="お問い合わせ内容をご入力下さい（必須）"></textarea></dd>
+          <dt>個人情報保護方針</dt>
+          <dd class="policy">
+            <h3>プライバシーポリシー</h3>
+            <p>１ 個人情報の定義<br>
+              本プライバシーポリシーにおける、「個人情報」とは、個人情報の保護に関する法律規定される「個人情報」及び当社サービスの利用に係るパスワードを指します。<br><br>
+             ２ 個人情報の取得<br>
+              当社は、利用目的の達成に必要な範囲で、個人情報を適正に取得し、不正の手段により取得することはありません。<br><br>
+             ３ 利用目的<br>
+              当社は、取得した個人情報を以下の目的で利用します。<br>
+             ①当社サービスのおける商品の発送、関連するアフターサービス、新商品サービスに関する情報の通知<br>
+             ②当社サービスに関するお問い合わせ等への対応<br>
+             ③当社サービスに関する規約等の変更等の通知<br><br>
+             ４ 第三者提供<br>
+              当社は、法令に定められた場合を除き、あらかじめ利用者の同意を得ないで、第三者（日本国外にあるも者を含みます。）に個人情報を提供しません。<br><br>
+             ５ 開示、訂正、利用停止、削除<br>
+              当社は、利用者から個人情報の開示、訂正、利用停止、削除を求められたときは、法令に定められた場合を除き、本人確認の上で、遅滞なく開示を行います。ただし、個人情報の開示につきましては、１件あたり１，０００円の手数料を頂戴しておりますので、あらかじめご了承ください。<br><br>
+             ６ お問い合わせ窓口<br>
+              個人情報の取り扱いに関するお問い合わせは、こちらのページからお願いします。<br><br>
+             ７ プライバシーポリシー<br>
+             当社は、必要に応じて、本プライバシーポリシーを変更いたします。
+              なお、本プライバシーポリシーを変更する場合は、その内容を当社のウェブサイト上
+             で表示いたします。<br><br>
+             【2021年4月1日制定】<br></p>
+            <!-- 【●年●月●日改訂】</p> -->
+          </dd>
+        </dl>
+        <label for="policy-check" class="policy-txt"><input type="checkbox" id="policy-check" required>上記の事項に同意の上、送信します</label>
+        <div class="form-btn">
+          <button name="submit" type="submit">CONFIRM<br><span>確認画面へ</span></button>
+          <div class="button-shadow"></div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <div class="scroll">
+    <a id ="to-top" href="#">TOP</a>
+    <span class="bar1"></span>
   </div>
 
-  <article class="price-table">
-    <h3>PRICE TABLE<br><span>料金表</span></h3>
-    <div class="table-container">
-      <table>
-        <tr>
-          <th>ご依頼内容</th><th>費用</th>
-        </tr>
-        <tr>
-          <td>パソコンサイトの制作</td><td>275,000円〜(税別)</td>
-        </tr>
-        <tr>
-          <td>スマートフォンサイトの制作</td><td>175,000円〜(税別)</td>
-        </tr>
-        <tr>
-          <td>ランディングページ</td><td>500,000円〜(税別)</td>
-        </tr>
-        <tr>
-          <td>WordPressの設定</td><td>150,000円〜(税別)</td>
-        </tr>
-        <tr>
-          <td>アニメーションの設定</td><td>50,000円〜(税別)</td>
-        </tr>
-        <tr>
-          <td>Web広告の運用代行</td><td>50,000円〜(税別)</td>
-        </tr>
-        <tr>
-          <td>Web解析レポートの作成</td><td>30,000円(税別)</td>
-        </tr>
-        <tr>
-          <td>SEO対策</td><td>200,000円〜(税別)</td>
-        </tr>
-      </table>
-    </div>
-  </article>
-
-  <article class="contact">
-    <h3>CONTACT<br><span>お問い合わせ＆お見積り依頼</span></h3>
-    <div class="contact-container">
-      <dl>
-        <dt><span>※</span>お問い合わせ内容</dt>
-        <small>この項目は記入必須です。</small>
-        <dd>
-          <select name="item">
-            <option value="お仕事依頼">お仕事依頼</option>
-            <option value="グッズについて">グッズについて</option>
-            <option value="その他">その他</option>
-          </select>
-        </dd>
-        <dt><span>※</span>お名前(漢字)</dt>
-        <dd><input type="text" name="name" required placeholder="お名前をご入力下さい（必須）"></dd>
-        <dt><span>※</span>お名前(カナ)</dt>
-        <dd><input type="text" name="name" required placeholder="お名前をご入力下さい（必須）"></dd>
-        <dt><span>※</span>メールアドレス</dt>
-        <dd><input type="email" name="email" required placeholder="メールアドレスをご入力下さい（必須）"></dd>
-        <dt><span>※</span>メールアドレス再入力</dt>
-        <dd><input type="email" name="email" required placeholder="もう一度メールアドレスをご入力下さい（必須）"></dd>
-        <dt><span>※</span>お問い合わせ内容</dt>
-        <dd><textarea name="message" required placeholder="お問い合わせ内容をご入力下さい（必須）"></textarea></dd>
-        <dt>個人情報保護方針</dt>
-        <dd class="policy">
-          <h3>プライバシーポリシー</h3>
-          <p>１ 個人情報の定義<br>
-            本プライバシーポリシーにおける、「個人情報」とは、個人情報の保護に関する法律規定される「個人情報」及び当社サービスの利用に係るパスワードを指します。<br><br>
-           ２ 個人情報の取得<br>
-            当社は、利用目的の達成に必要な範囲で、個人情報を適正に取得し、不正の手段により取得することはありません。<br><br>
-           ３ 利用目的<br>
-            当社は、取得した個人情報を以下の目的で利用します。<br>
-           ①当社サービスのおける商品の発送、関連するアフターサービス、新商品サービスに関する情報の通知<br>
-           ②当社サービスに関するお問い合わせ等への対応<br>
-           ③当社サービスに関する規約等の変更等の通知<br><br>
-           ４ 第三者提供<br>
-            当社は、法令に定められた場合を除き、あらかじめ利用者の同意を得ないで、第三者（日本国外にあるも者を含みます。）に個人情報を提供しません。<br><br>
-           ５ 開示、訂正、利用停止、削除<br>
-            当社は、利用者から個人情報の開示、訂正、利用停止、削除を求められたときは、法令に定められた場合を除き、本人確認の上で、遅滞なく開示を行います。ただし、個人情報の開示につきましては、１件あたり１，０００円の手数料を頂戴しておりますので、あらかじめご了承ください。<br><br>
-           ６ お問い合わせ窓口<br>
-            個人情報の取り扱いに関するお問い合わせは、こちらのページからお願いします。<br><br>
-           ７ プライバシーポリシー<br>
-           当社は、必要に応じて、本プライバシーポリシーを変更いたします。
-            なお、本プライバシーポリシーを変更する場合は、その内容を当社のウェブサイト上
-           で表示いたします。<br><br>
-           【2021年4月1日制定】<br></p>
-          <!-- 【●年●月●日改訂】</p> -->
-        </dd>
-      </dl>
-      <label for="policy-check" class="policy-txt"><input type="checkbox" id="policy-check" required>上記の事項に同意の上、送信します</label>
-      <div class="form-btn">
-        <button name="submit" type="submit">CONFIRM<br><span>確認画面へ</span></button>
-        <div class="button-shadow"></div>
-      </div>
-    </div>
-  </article>
-
   <footer>
+    <img src="/step/img/top-pc/logo-footer.png" alt="株式会社STEPロゴ画像">
+    <p>株式会社 STEP</p>
+    <p>〒171-0022 東京都豊島区南池袋2-12-9 ＫＫビル４Ｆ</p>
+    <p class="copy">&copy;STEP Inc.</p>
   </footer>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/inoue-script.js"></script>
+  <script src="/step/js/script.js"></script>
+  <script src="/step/js/inoue-script.js"></script>
 <!--   1. --><script src=""></script>
 <!--   2. --><script src=""></script>
 <!--   3. --><script src=""></script>
