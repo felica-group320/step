@@ -55,7 +55,7 @@
 #6-inoue-ContactPage-KeyVisual
 #7-inoue-ContactPage-PriceTable
 #8-inoue-ContactPage-Contact
-#9
+#9-inoue-body
 #10
 #11
 #12
