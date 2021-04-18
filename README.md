@@ -53,8 +53,8 @@
 #4-template04
 #5-umezawa-AboutPage-KeyVisual,Rinen
 #6-inoue-ContactPage-KeyVisual
-#7
-#8
+#7-inoue-ContactPage-PriceTable
+#8-inoue-ContactPage-Contact
 #9
 #10
 #11

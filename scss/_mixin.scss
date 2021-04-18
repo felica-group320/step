@@ -1,10 +1,29 @@
+$pc4: 1760px; // PC
+$pc3: 1520px; // PC
+$pc2: 1280px; // PC
+$pc: 1040px; // PC
 $tab4: 800px; // タブレット
 $tab3: 700px; // タブレット
 $tab2: 600px; // タブレット
 $tab: 500px; // タブレット
 
+@mixin pc4 {
+  @media (max-width: ($pc4)) {
+    @content;
+  }
+}
+@mixin pc3 {
+  @media (max-width: ($pc3)) {
+    @content;
+  }
+}
+@mixin pc2 {
+  @media (max-width: ($pc2)) {
+    @content;
+  }
+}
 @mixin pc {
-  @media (max-width: ($tab4)) {
+  @media (max-width: ($pc)) {
     @content;
   }
 }
@@ -25,6 +44,18 @@ $tab: 500px; // タブレット
 
 html {
   font-size: 10px;
+  @include pc4{
+    font-size: calc(10px * (176 / 192));
+  }
+  @include pc3{
+    font-size: calc(10px * (152 / 192));
+  }
+  @include pc2{
+    font-size: calc(10px * (128 / 192));
+  }
+  @include pc{
+    font-size: calc(10px * (104 / 192));
+  }
   @include tab3{
     font-size: calc(10px * (7 / 8));
   }
@@ -40,7 +71,7 @@ html {
 body{
   font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
   padding: 0 12rem;
-  // opacity: 0.4;
+  // opacity: 0.3;
 }
 
 $base-color:#fff;
