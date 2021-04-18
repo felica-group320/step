@@ -1,5 +1,6 @@
 
 .price-table{
+  margin-bottom: 9.5rem;
   >h3{
     font-size: 6.4rem;
     font-weight: bold;
@@ -12,9 +13,8 @@
       line-height: 0.4;
     }
   }
-  .table-container{
-    height: 100vh;
-    table{
+  >.table-container{
+    >table{
       border-collapse:collapse;
       position: relative;
       background: #fff;
@@ -62,7 +62,7 @@
           width: 18.1rem;
           left: 42rem;
         }
-        th{
+        >th{
           width: 102.4rem;
           height: 11.2rem;
           background: $main-color;
@@ -70,11 +70,11 @@
           color: #fff;
           font-family: sans-serif;
         }
-        th +th{
+        >th +th{
           width: 65.6rem;
           background: $sub-color;
         }
-        td{
+        >td{
           height: 11.2rem;
           font-size: 3.7rem;
           color: $txt-color;
@@ -93,7 +93,7 @@
             z-index: 1;
           }
         }
-        td + td{
+        >td + td{
           // padding-right: 5rem;
           &::after{
             content: "";

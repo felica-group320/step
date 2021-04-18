@@ -251,6 +251,30 @@ html {
   font-size: 10px;
 }
 
+@media (max-width: 1760px) {
+  html {
+    font-size: calc(10px * (176 / 192));
+  }
+}
+
+@media (max-width: 1520px) {
+  html {
+    font-size: calc(10px * (152 / 192));
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: calc(10px * (128 / 192));
+  }
+}
+
+@media (max-width: 1040px) {
+  html {
+    font-size: calc(10px * (104 / 192));
+  }
+}
+
 @media (max-width: 700px) {
   html {
     font-size: calc(10px * (7 / 8));
@@ -315,7 +339,7 @@ body {
 .key-visual > h2::after {
   content: "";
   display: block;
-  width: 750px;
+  width: 75rem;
   height: 4px;
   background: #f3e42b;
   position: absolute;
@@ -326,6 +350,10 @@ body {
 .key-visual > h2 > span {
   padding-left: 11.1rem;
   line-height: 1.5;
+}
+
+.price-table {
+  margin-bottom: 9.5rem;
 }
 
 .price-table > h3 {
@@ -342,17 +370,13 @@ body {
   line-height: 0.4;
 }
 
-.price-table .table-container {
-  height: 100vh;
-}
-
-.price-table .table-container table {
+.price-table > .table-container > table {
   border-collapse: collapse;
   position: relative;
   background: #fff;
 }
 
-.price-table .table-container table::after {
+.price-table > .table-container > table::after {
   content: "";
   display: block;
   width: 100%;
@@ -364,47 +388,47 @@ body {
   z-index: -1;
 }
 
-.price-table .table-container table tr:nth-of-type(2) > td::after {
+.price-table > .table-container > table tr:nth-of-type(2) > td::after {
   width: 42.8rem;
   left: 32rem;
 }
 
-.price-table .table-container table tr:nth-of-type(3) > td::after {
+.price-table > .table-container > table tr:nth-of-type(3) > td::after {
   width: 55rem;
   left: 27rem;
 }
 
-.price-table .table-container table tr:nth-of-type(4) > td::after {
+.price-table > .table-container > table tr:nth-of-type(4) > td::after {
   width: 37.8rem;
   left: 34rem;
 }
 
-.price-table .table-container table tr:nth-of-type(5) > td::after {
+.price-table > .table-container > table tr:nth-of-type(5) > td::after {
   width: 38.2rem;
   left: 34rem;
 }
 
-.price-table .table-container table tr:nth-of-type(6) > td::after {
+.price-table > .table-container > table tr:nth-of-type(6) > td::after {
   width: 42.8rem;
   left: 32rem;
 }
 
-.price-table .table-container table tr:nth-of-type(7) > td::after {
+.price-table > .table-container > table tr:nth-of-type(7) > td::after {
   width: 40.3rem;
   left: 33rem;
 }
 
-.price-table .table-container table tr:nth-of-type(8) > td::after {
+.price-table > .table-container > table tr:nth-of-type(8) > td::after {
   width: 48.9rem;
   left: 29rem;
 }
 
-.price-table .table-container table tr:nth-of-type(9) > td::after {
+.price-table > .table-container > table tr:nth-of-type(9) > td::after {
   width: 18.1rem;
   left: 42rem;
 }
 
-.price-table .table-container table tr th {
+.price-table > .table-container > table tr > th {
   width: 102.4rem;
   height: 11.2rem;
   background: #44768c;
@@ -413,12 +437,12 @@ body {
   font-family: sans-serif;
 }
 
-.price-table .table-container table tr th + th {
+.price-table > .table-container > table tr > th + th {
   width: 65.6rem;
   background: #b9dfec;
 }
 
-.price-table .table-container table tr td {
+.price-table > .table-container > table tr > td {
   height: 11.2rem;
   font-size: 3.7rem;
   color: #333;
@@ -428,7 +452,7 @@ body {
   position: relative;
 }
 
-.price-table .table-container table tr td::after {
+.price-table > .table-container > table tr > td::after {
   content: "";
   display: block;
   width: 55rem;
@@ -439,7 +463,188 @@ body {
   z-index: 1;
 }
 
-.price-table .table-container table tr td + td::after {
+.price-table > .table-container > table tr > td + td::after {
   content: "";
   display: none;
+}
+
+.contact {
+  height: 200vh;
+}
+
+.contact > h3 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  color: #44768c;
+  margin-bottom: 6.5rem;
+}
+
+.contact > h3 > span {
+  display: block;
+  font-size: 3.2rem;
+  color: #333;
+  line-height: 0.4;
+}
+
+.contact .contact-container {
+  margin: 0 31rem 0 34rem;
+  padding: 0 3rem 3rem 0;
+  background: #fff;
+  font-family: sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+
+.contact .contact-container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(/step/img/mizutama.gif);
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  z-index: -1;
+}
+
+.contact .contact-container dl dt {
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.contact .contact-container dl dt:nth-of-type(n+2) {
+  margin-bottom: 1.1rem;
+}
+
+.contact .contact-container dl dt span {
+  color: #f3e42b;
+}
+
+.contact .contact-container dl small {
+  display: block;
+  font-size: 1.3rem;
+  color: #f3e42b;
+  margin-bottom: 0.6rem;
+}
+
+.contact .contact-container dl dd {
+  height: 8rem;
+  border: 0.1rem solid #333;
+  margin-bottom: 3.2rem;
+}
+
+.contact .contact-container dl dd:nth-of-type(n+2) {
+  height: 7rem;
+}
+
+.contact .contact-container dl dd:nth-of-type(n+6) {
+  height: 20rem;
+}
+
+.contact .contact-container dl dd:last-of-type {
+  margin-bottom: 2.7rem;
+}
+
+.contact .contact-container dl dd input[type="text"], .contact .contact-container dl dd input[type="email"] {
+  width: 100%;
+  height: 6.8rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact .contact-container dl dd select {
+  width: 100%;
+  height: 7.8rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact .contact-container dl dd textarea {
+  width: 100%;
+  height: 19.8rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.contact .contact-container dl .policy {
+  background: #fff;
+  padding: 4rem 2rem 2rem 2rem;
+  overflow-y: scroll;
+  height: 20rem;
+}
+
+.contact .contact-container dl .policy h3 {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact .contact-container dl .policy p {
+  font-size: 1.4rem;
+  text-align-last: left;
+  line-height: 1.5;
+  color: #333;
+}
+
+.contact .contact-container label {
+  display: block;
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 0 auto 3.2rem;
+  text-align: center;
+}
+
+.contact .contact-container label [type="checkbox"] {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.2rem;
+}
+
+.contact .contact-container .form-btn {
+  position: relative;
+}
+
+.contact .contact-container .form-btn [type="submit"] {
+  display: block;
+  font-size: 2.1rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  color: #f3e42b;
+  background: #fff;
+  width: 50rem;
+  height: 12rem;
+  margin: 0 auto;
+  border: 0.2rem solid #f3e42b;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.contact .contact-container .form-btn [type="submit"] span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.contact .contact-container .form-btn [type="submit"]:hover {
+  transform: translate(-0.5rem, -0.5rem);
+}
+
+.contact .contact-container .form-btn [type="submit"]:hover ~ .button-shadow {
+  transform: translate(0.5rem, 0.5rem);
+}
+
+.contact .contact-container .form-btn .button-shadow {
+  width: 50rem;
+  height: 12rem;
+  background: #f3e42b;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1;
+  transition: 0.4s;
 }
