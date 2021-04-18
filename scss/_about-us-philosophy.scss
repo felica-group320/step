@@ -1,0 +1,36 @@
+
+.about-us{
+    >main{
+        >.philosophy{
+            max-width: 192rem;
+            max-height: 83rem;
+            background: url(/step/img/about-us-pc/step.jpg)no-repeat center center/cover;
+            margin: 0 auto 7.1rem;
+            padding: 4.2rem 12rem 4.9rem;
+            >h3{
+                font-size: 10rem;
+                color: $txt-color;
+                font-weight: bold;
+            }
+            >ul{
+                >li{
+                    font-size: 3.2rem;
+                    font-weight: bold;
+                    color: $txt-color;
+                    &:first-of-type{
+                        padding: 0 0 17.3rem 9rem;
+                    }
+                    &:nth-of-type(2){
+                        padding: 0 0 17.3rem 23rem;
+                    }
+                    &:last-of-type{
+                        padding-left: 45rem;
+                    }
+                    &:nth-of-type(2-n){
+                        margin-bottom: 17.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

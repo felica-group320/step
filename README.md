@@ -51,7 +51,7 @@
 #2-template02
 #3-template03
 #4-template04
-#5
+#5-umezawa-AboutPage-KeyVisual,Rinen
 #6
 #7
 #8
