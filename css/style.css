@@ -452,6 +452,121 @@ footer p:nth-of-type(2) {
   margin-bottom: 17.3rem;
 }
 
+.about-us > main > .members {
+  padding: 0 12rem;
+  margin-bottom: 9.5rem;
+}
+
+.about-us > main > .members > h3 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  color: #44768c;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.about-us > main > .members > h3 > span {
+  font-size: 3.2rem;
+  color: #333;
+}
+
+.about-us > main > .members > .president-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6.5rem;
+}
+
+.about-us > main > .members > .president-wrapper > .president-box > img {
+  max-width: 53rem;
+  margin-bottom: 0.6rem;
+}
+
+.about-us > main > .members > .president-wrapper > .president-box > p {
+  font-size: 2.4rem;
+  color: #333;
+}
+
+.about-us > main > .members > .president-wrapper > .president-box > p > span {
+  font-size: 3.6rem;
+}
+
+.about-us > main > .members > .president-wrapper > .president-txt {
+  border: 1px solid #333;
+  width: 109rem;
+  height: 53rem;
+  padding: 3.9rem 0 4rem 2.5rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.about-us > main > .members > .president-wrapper > .president-txt::before {
+  display: block;
+  content: "";
+  width: 109rem;
+  height: 26.5rem;
+  background: url(/step/img/about-us-pc/bg-bluedot.jpg) repeat;
+  position: absolute;
+  top: 0;
+  right: 2.25rem;
+  z-index: -1;
+}
+
+.about-us > main > .members > .president-wrapper > .president-txt::after {
+  display: block;
+  content: "";
+  width: 109rem;
+  height: 26.5rem;
+  background: url(/step/img/about-us-pc/bg-bluedot.jpg) repeat;
+  position: absolute;
+  bottom: 0;
+  left: 2.25rem;
+  z-index: -1;
+}
+
+.about-us > main > .members > .president-wrapper > .president-txt > p {
+  color: #333;
+  font-size: 2.2rem;
+  line-height: 1.9;
+  padding-right: 4rem;
+}
+
+.about-us > main > .members > .president-wrapper > .president-txt > p:first-of-type {
+  font-size: 3.6rem;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.about-us > main > .members > .president-wrapper > .president-txt > p:first-of-type::after {
+  display: block;
+  content: "";
+  width: 25rem;
+  height: 0.3rem;
+  background-color: #f3e42b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.about-us > main > .members > .members-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us > main > .members > .members-wrapper > .members-box > img {
+  max-width: 53rem;
+  margin-bottom: 0.6rem;
+}
+
+.about-us > main > .members > .members-wrapper > .members-box > p {
+  font-size: 2.4rem;
+  color: #333;
+}
+
+.about-us > main > .members > .members-wrapper > .members-box > p > span {
+  font-size: 3.6rem;
+}
+
 .contact-page {
   padding: 0 12rem;
 }
