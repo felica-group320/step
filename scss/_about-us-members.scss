@@ -1,0 +1,108 @@
+
+.about-us{
+    >main{
+        >.members{
+            padding: 0 12rem;
+            margin-bottom: 9.5rem;
+            >h3{
+                font-size: 6.4rem;
+                font-weight: bold;
+                color: $main-color;
+                line-height: 1;
+                margin-bottom: 2rem;
+                >span{
+                    font-size: 3.2rem;
+                    color: $txt-color;
+                }
+            }
+            >.president-wrapper{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 6.5rem;
+                >.president-box{
+                    >img{
+                        max-width:53rem; 
+                        margin-bottom: 0.6rem;
+                    }
+                    >p{
+                        font-size: 2.4rem;
+                        color: $txt-color;
+                        >span{
+                            font-size: 3.6rem;
+                        }
+                    }
+                }
+                >.president-txt{
+                    border: 1px solid $txt-color;
+                    width: 109rem;
+                    height: 53rem;
+                    padding: 3.9rem 0 4rem 2.5rem;
+                    background-color: $base-color;
+                    position: relative;
+                    &::before{
+                        display: block;
+                        content: "";
+                        width: 109rem;
+                        height: 26.5rem;
+                        background: url(/step/img/about-us-pc/bg-bluedot.jpg)repeat;
+                        position: absolute;
+                        top: 0;
+                        right: 2.25rem;
+                        z-index: -1;
+                    }
+                    &::after{
+                        display: block;
+                        content: "";
+                        width: 109rem;
+                        height: 26.5rem;
+                        background: url(/step/img/about-us-pc/bg-bluedot.jpg)repeat;
+                        position: absolute;
+                        bottom: 0;
+                        left: 2.25rem;
+                        z-index: -1;
+                    }
+                    >p{
+                        color: $txt-color;
+                        font-size: 2.2rem;
+                        line-height: 1.9;
+                        padding-right: 4rem;
+                        &:first-of-type{
+                            font-size: 3.6rem;
+                            font-weight: bold;
+                            position: relative;
+                            margin-bottom: 3rem;
+                            &::after{
+                                display: block;
+                                content: "";
+                                width: 25rem;
+                                height: 0.3rem;
+                                background-color: $accent-color;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            >.members-wrapper{
+                display: flex;
+                justify-content: space-between;
+                >.members-box{
+                    >img{
+                        max-width:53rem; 
+                        margin-bottom: 0.6rem;
+                    }
+                    >p{
+                        font-size: 2.4rem;
+                        color: $txt-color;
+                        >span{
+                            font-size: 3.6rem;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
