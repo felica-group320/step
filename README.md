@@ -1,7 +1,7 @@
 # step
 
 【ワークフロー】
-  1.vscordを起動し現在地(main)を確認した上でプルする
+　　1.vscordを起動し現在地(main)を確認した上でプルする
   2.ブランチの作成
   (#数字-名前-ページ名-コンテンツ名 例：#1-inoue-TopPage-header-HamburgerMenu)
   3.自分の名前のブランチへ移動
