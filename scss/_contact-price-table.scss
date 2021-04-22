@@ -30,43 +30,12 @@
           z-index: -1;
         }
         tr{
-          &:nth-of-type(2)>td::after{
-            width: 42.8rem;
-            left: 32rem;
-          }
-          &:nth-of-type(3)>td::after{
-            width: 55rem;
-            left: 27rem;
-          }
-          &:nth-of-type(4)>td::after{
-            width: 37.8rem;
-            left: 34rem;
-          }
-          &:nth-of-type(5)>td::after{
-            width: 38.2rem;
-            left: 34rem;
-          }
-          &:nth-of-type(6)>td::after{
-            width: 42.8rem;
-            left: 32rem;
-          }
-          &:nth-of-type(7)>td::after{
-            width: 40.3rem;
-            left: 33rem;
-          }
-          &:nth-of-type(8)>td::after{
-            width: 48.9rem;
-            left: 29rem;
-          }
-          &:nth-of-type(9)>td::after{
-            width: 18.1rem;
-            left: 42rem;
-          }
+          width: 100%;
           >th{
             width: 102.4rem;
-            height: 11.2rem;
+            height: 9.5rem;
             background: $main-color;
-            font-size: 5.3rem;
+            font-size: 5rem;
             color: #fff;
             font-family: sans-serif;
           }
@@ -75,22 +44,22 @@
             background: $sub-color;
           }
           >td{
-            height: 11.2rem;
-            font-size: 3.7rem;
+            height: 9.5rem;
+            font-size: 3.4rem;
             color: $txt-color;
             font-family: sans-serif;
             text-align: center;
             font-weight: 600;
-            position: relative;
-            &::after{
-              content: "";
-              display: block;
-              width: 55rem;
-              height: 1px;
-              background: $accent-color;
-              position: absolute;
-              bottom: 2rem;
-              z-index: 1;
+            span{
+              display: inline-block;
+              &::after{
+                display: block;
+                content: "";
+                width: 100%;
+                height: 0.1rem;
+                background: $accent-color;
+                z-index: 1;
+              }
             }
           }
           >td + td{

@@ -300,15 +300,15 @@ body {
 .scroll {
   display: none;
   position: fixed;
-  right: -1.8rem;
-  bottom: 3rem;
+  right: -0.6rem;
+  bottom: 5rem;
   transform: rotate(90deg);
 }
 
 .scroll .bar1 {
   display: block;
   background: #333;
-  width: 10.7rem;
+  width: 8rem;
   height: 0.1rem;
   position: absolute;
   top: 0;
@@ -317,39 +317,59 @@ body {
   margin: auto;
 }
 
+.scroll .bar1.color {
+  background-color: #f3e42b;
+}
+
 .scroll a {
   font-family: sans-serif;
   font-size: 1.8rem;
   font-weight: 0;
   color: #333;
-  padding-right: 11.6rem;
+  padding-right: 9rem;
+}
+
+.scroll a.color {
+  color: #f3e42b;
 }
 
 footer {
   height: 61rem;
   background: #44768c;
-  padding: 15.5rem 64.3rem 0;
+  padding: 15.5rem 64.2rem 0;
   text-align: center;
 }
 
-footer img {
+footer > img {
   width: 36.5rem;
   height: 10.3rem;
   margin-bottom: 4.7rem;
 }
 
-footer p {
+footer > p {
   color: #fff;
   font-size: 2.4rem;
   font-weight: bold;
-  margin-bottom: 2.2rem;
   line-height: 1.5;
 }
 
-footer p:nth-of-type(2) {
+footer > a {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > a > img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-top: 1rem;
+}
+
+footer > a p {
+  color: #fff;
+  font-weight: bold;
   font-size: 2rem;
   line-height: calc(36 / 20);
-  margin-bottom: 12.5rem;
+  margin: 2.3rem 6.4rem 12.7rem 0;
 }
 
 .about-us > main > .key-visual {
@@ -546,51 +566,15 @@ footer p:nth-of-type(2) {
   z-index: -1;
 }
 
-.contact-page .price-table > .table-container > table tr:nth-of-type(2) > td::after {
-  width: 42.8rem;
-  left: 32rem;
-}
-
-.contact-page .price-table > .table-container > table tr:nth-of-type(3) > td::after {
-  width: 55rem;
-  left: 27rem;
-}
-
-.contact-page .price-table > .table-container > table tr:nth-of-type(4) > td::after {
-  width: 37.8rem;
-  left: 34rem;
-}
-
-.contact-page .price-table > .table-container > table tr:nth-of-type(5) > td::after {
-  width: 38.2rem;
-  left: 34rem;
-}
-
-.contact-page .price-table > .table-container > table tr:nth-of-type(6) > td::after {
-  width: 42.8rem;
-  left: 32rem;
-}
-
-.contact-page .price-table > .table-container > table tr:nth-of-type(7) > td::after {
-  width: 40.3rem;
-  left: 33rem;
-}
-
-.contact-page .price-table > .table-container > table tr:nth-of-type(8) > td::after {
-  width: 48.9rem;
-  left: 29rem;
-}
-
-.contact-page .price-table > .table-container > table tr:nth-of-type(9) > td::after {
-  width: 18.1rem;
-  left: 42rem;
+.contact-page .price-table > .table-container > table tr {
+  width: 100%;
 }
 
 .contact-page .price-table > .table-container > table tr > th {
   width: 102.4rem;
-  height: 11.2rem;
+  height: 9.5rem;
   background: #44768c;
-  font-size: 5.3rem;
+  font-size: 5rem;
   color: #fff;
   font-family: sans-serif;
 }
@@ -601,23 +585,24 @@ footer p:nth-of-type(2) {
 }
 
 .contact-page .price-table > .table-container > table tr > td {
-  height: 11.2rem;
-  font-size: 3.7rem;
+  height: 9.5rem;
+  font-size: 3.4rem;
   color: #333;
   font-family: sans-serif;
   text-align: center;
   font-weight: 600;
-  position: relative;
 }
 
-.contact-page .price-table > .table-container > table tr > td::after {
-  content: "";
+.contact-page .price-table > .table-container > table tr > td span {
+  display: inline-block;
+}
+
+.contact-page .price-table > .table-container > table tr > td span::after {
   display: block;
-  width: 55rem;
-  height: 1px;
+  content: "";
+  width: 100%;
+  height: 0.1rem;
   background: #f3e42b;
-  position: absolute;
-  bottom: 2rem;
   z-index: 1;
 }
 
@@ -645,8 +630,9 @@ footer p:nth-of-type(2) {
 }
 
 .contact-page > .contact > .contact-container {
-  margin: 0 31rem 0 34rem;
-  padding: 0 3rem 3rem 0;
+  border: 0.1rem solid gainsboro;
+  margin: 0 25rem 0 28rem;
+  padding: 0 3rem 3rem 3rem;
   background: #fff;
   font-family: sans-serif;
   font-weight: 600;
@@ -665,98 +651,319 @@ footer p:nth-of-type(2) {
   z-index: -1;
 }
 
-.contact-page > .contact > .contact-container > dl > dt {
-  font-size: 1.4rem;
+.contact-page > .contact > .contact-container .step {
+  width: 60%;
+  margin: 6rem auto 9rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-page > .contact > .contact-container .step::before {
+  display: block;
+  content: "";
+  height: 0.2rem;
+  width: 100%;
+  background-color: #caccd7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.contact-page > .contact > .contact-container .step li {
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: #caccd7;
+  position: relative;
+}
+
+.contact-page > .contact > .contact-container .step li.current {
+  position: relative;
+  background-color: #44768c;
+}
+
+.contact-page > .contact > .contact-container .step li.current::before {
+  display: block;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 0.6rem solid #44768c;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -0.6rem;
+  margin: auto;
+  opacity: 0.4;
+}
+
+.contact-page > .contact > .contact-container .step li p {
+  width: 4rem;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 3rem;
+  left: -0.7rem;
+}
+
+.contact-page > .contact > .contact-container > dl:nth-of-type(2) > dd {
+  height: 21rem;
+}
+
+.contact-page > .contact > .contact-container > dl dt {
+  font-size: 2rem;
   margin-bottom: 0.7rem;
 }
 
-.contact-page > .contact > .contact-container > dl > dt:nth-of-type(n+2) {
+.contact-page > .contact > .contact-container > dl dt:nth-of-type(n+2) {
   margin-bottom: 1.1rem;
 }
 
-.contact-page > .contact > .contact-container > dl > dt > span {
+.contact-page > .contact > .contact-container > dl dt > span {
   color: #f3e42b;
 }
 
-.contact-page > .contact > .contact-container > dl > small {
+.contact-page > .contact > .contact-container > dl small {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #f3e42b;
   margin-bottom: 0.6rem;
 }
 
-.contact-page > .contact > .contact-container > dl > dd {
+.contact-page > .contact > .contact-container > dl dd {
   height: 8rem;
-  border: 0.1rem solid #333;
+  border: 0.1rem solid #707070;
   margin-bottom: 3.2rem;
 }
 
-.contact-page > .contact > .contact-container > dl > dd:nth-of-type(n+2) {
-  height: 7rem;
-}
-
-.contact-page > .contact > .contact-container > dl > dd:nth-of-type(n+6) {
-  height: 20rem;
-}
-
-.contact-page > .contact > .contact-container > dl > dd:last-of-type {
-  margin-bottom: 2.7rem;
-}
-
-.contact-page > .contact > .contact-container > dl > dd input[type="text"], .contact-page > .contact > .contact-container > dl > dd input[type="email"] {
+.contact-page > .contact > .contact-container > dl dd > select {
   width: 100%;
-  height: 6.8rem;
-  padding: 1rem;
-  font-size: 1.3rem;
+  height: 7.7rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
 }
 
-.contact-page > .contact > .contact-container > dl > dd > select {
+.contact-page > .contact > .contact-container > dl dd > textarea {
   width: 100%;
-  height: 7.8rem;
-  padding: 1rem;
-  font-size: 1.3rem;
-}
-
-.contact-page > .contact > .contact-container > dl > dd > textarea {
-  width: 100%;
-  height: 19.8rem;
-  padding: 1rem;
-  font-size: 1.3rem;
+  height: 20.8rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
 }
 
 .contact-page > .contact > .contact-container > dl > .policy {
   background: #fff;
-  padding: 4rem 2rem 2rem 2rem;
+  padding: 2rem;
   overflow-y: scroll;
   height: 20rem;
 }
 
-.contact-page > .contact > .contact-container > dl > .policy > h3 {
-  font-size: 2.6rem;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
 .contact-page > .contact > .contact-container > dl > .policy > p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align-last: left;
   line-height: 1.5;
   color: #333;
 }
 
-.contact-page > .contact > .contact-container > label {
-  display: block;
-  color: #333;
-  font-size: 1.3rem;
-  font-weight: 300;
-  margin: 0 auto 3.2rem;
+.contact-page > .contact > .contact-container > .name-container {
+  display: flex;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper {
+  width: 50%;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dt {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dt:nth-of-type(n+2) {
+  margin-bottom: 1.1rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dt > span {
+  color: #f3e42b;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd {
+  height: 8rem;
+  border: 0.1rem solid #707070;
+  margin-bottom: 3.2rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd:nth-of-type(n+2) {
+  height: 7rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd:nth-of-type(n+6) {
+  height: 21rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd input[type="text"], .contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd input[type="email"] {
+  width: 100%;
+  height: 7.7rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf {
+  width: 50%;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dt {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+  opacity: 0;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dt:nth-of-type(n+2) {
+  margin-bottom: 1.1rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dt > span {
+  color: #f3e42b;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd {
+  height: 8rem;
+  border: 0.1rem solid #707070;
+  border-left: none;
+  margin-bottom: 3.2rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd:nth-of-type(n+2) {
+  height: 7rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd:nth-of-type(n+6) {
+  height: 21rem;
+}
+
+.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd input[type="text"], .contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd input[type="email"] {
+  width: 100%;
+  height: 7.7rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container {
+  display: flex;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper {
+  width: 50%;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dt {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dt:nth-of-type(n+2) {
+  margin-bottom: 1.1rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dt > span {
+  color: #f3e42b;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd {
+  height: 8rem;
+  border: 0.1rem solid #707070;
+  margin-bottom: 3.2rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd:nth-of-type(n+2) {
+  height: 7rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd:nth-of-type(n+6) {
+  height: 21rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd input[type="text"], .contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd input[type="email"] {
+  width: 100%;
+  height: 7.7rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf {
+  width: 50%;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dt {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+  opacity: 0;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dt:nth-of-type(n+2) {
+  margin-bottom: 1.1rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dt > span {
+  color: #f3e42b;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd {
+  height: 8rem;
+  border: 0.1rem solid #707070;
+  border-left: none;
+  margin-bottom: 3.2rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd:nth-of-type(n+2) {
+  height: 7rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd:nth-of-type(n+6) {
+  height: 21rem;
+}
+
+.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd input[type="text"], .contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd input[type="email"] {
+  width: 100%;
+  height: 7.7rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+}
+
+.contact-page > .contact > .contact-container .agree-container {
   text-align: center;
 }
 
-.contact-page > .contact > .contact-container > label [type="checkbox"] {
-  height: 1rem;
-  width: 1rem;
-  margin-right: 0.2rem;
+.contact-page > .contact > .contact-container .agree-container .agree-wrapper {
+  display: inline-block;
+}
+
+.contact-page > .contact > .contact-container .agree-container .agree-wrapper > label {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 0 auto 3.2rem;
+  position: relative;
+  line-height: 1.8rem;
+}
+
+.contact-page > .contact > .contact-container .agree-container .agree-wrapper > label span {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.3rem solid #fff;
+  box-shadow: 0 0 0 0.2rem #000;
+  margin-right: 1rem;
+  padding: 0.2rem;
+}
+
+.contact-page > .contact > .contact-container .agree-container .agree-wrapper > label span.active {
+  background: #44768c;
 }
 
 .contact-page > .contact > .contact-container > .form-btn {
