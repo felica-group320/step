@@ -60,8 +60,8 @@ item
 #11-umezawa-AboutUsPage-members  
 #12-inoue-ContactPage-Contact02
 #13-umezawa-AboutUsPage-header 
-#14  
-#15  
+#14-all  
+#15-umezawa-AboutUsPage-nav,members  
 #16  
 #17  
 #18  
