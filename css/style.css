@@ -372,18 +372,18 @@ footer > a p {
   margin: 2.3rem 6.4rem 12.7rem 0;
 }
 
-.about-us > main > .key-visual {
+.about-us > .key-visual {
   margin: 0 auto 9rem;
   padding: 0 12rem;
 }
 
-.about-us > main > .key-visual > .key-visual-wrapper {
+.about-us > .key-visual > .key-visual-wrapper {
   max-width: 168rem;
   max-height: 100rem;
   position: relative;
 }
 
-.about-us > main > .key-visual > .key-visual-wrapper > h2 {
+.about-us > .key-visual > .key-visual-wrapper > h2 {
   background-color: #fff;
   max-width: 81rem;
   font-size: 6.4rem;
@@ -397,13 +397,13 @@ footer > a p {
   color: #333;
 }
 
-.about-us > main > .key-visual > .key-visual-wrapper > h2 > span {
+.about-us > .key-visual > .key-visual-wrapper > h2 > span {
   display: block;
   text-align: right;
   padding-left: 7rem;
 }
 
-.about-us > main > .key-visual > .key-visual-wrapper > h2::before {
+.about-us > .key-visual > .key-visual-wrapper > h2::before {
   display: block;
   content: "";
   width: 100%;
@@ -415,7 +415,7 @@ footer > a p {
   z-index: -3;
 }
 
-.about-us > main > .key-visual > .key-visual-wrapper > h2::after {
+.about-us > .key-visual > .key-visual-wrapper > h2::after {
   display: block;
   content: "";
   max-width: 59rem;
@@ -429,14 +429,14 @@ footer > a p {
   margin: auto;
 }
 
-.about-us > main > .key-visual > .key-visual-wrapper > img {
+.about-us > .key-visual > .key-visual-wrapper > img {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: -5;
 }
 
-.about-us > main > .philosophy {
+.about-us > .philosophy {
   max-width: 192rem;
   max-height: 83rem;
   background: url(/step/img/about-us-pc/step.jpg) no-repeat center center/cover;
@@ -444,40 +444,40 @@ footer > a p {
   padding: 4.2rem 12rem 4.9rem;
 }
 
-.about-us > main > .philosophy > h3 {
+.about-us > .philosophy > h3 {
   font-size: 10rem;
   color: #333;
   font-weight: bold;
 }
 
-.about-us > main > .philosophy > ul > li {
+.about-us > .philosophy > ul > li {
   font-size: 3.2rem;
   font-weight: bold;
   color: #333;
 }
 
-.about-us > main > .philosophy > ul > li:first-of-type {
+.about-us > .philosophy > ul > li:first-of-type {
   padding: 0 0 17.3rem 9rem;
 }
 
-.about-us > main > .philosophy > ul > li:nth-of-type(2) {
+.about-us > .philosophy > ul > li:nth-of-type(2) {
   padding: 0 0 17.3rem 23rem;
 }
 
-.about-us > main > .philosophy > ul > li:last-of-type {
+.about-us > .philosophy > ul > li:last-of-type {
   padding-left: 45rem;
 }
 
-.about-us > main > .philosophy > ul > li:nth-of-type(2-n) {
+.about-us > .philosophy > ul > li:nth-of-type(2-n) {
   margin-bottom: 17.3rem;
 }
 
-.about-us > main > .members {
+.about-us > .members {
   padding: 0 12rem;
   margin-bottom: 9.5rem;
 }
 
-.about-us > main > .members > h3 {
+.about-us > .members > h3 {
   font-size: 6.4rem;
   font-weight: bold;
   color: #44768c;
@@ -485,32 +485,32 @@ footer > a p {
   margin-bottom: 2rem;
 }
 
-.about-us > main > .members > h3 > span {
+.about-us > .members > h3 > span {
   font-size: 3.2rem;
   color: #333;
 }
 
-.about-us > main > .members > .president-wrapper {
+.about-us > .members > .president-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 6.5rem;
 }
 
-.about-us > main > .members > .president-wrapper > .president-box > img {
+.about-us > .members > .president-wrapper > .president-box > img {
   max-width: 53rem;
   margin-bottom: 0.6rem;
 }
 
-.about-us > main > .members > .president-wrapper > .president-box > p {
+.about-us > .members > .president-wrapper > .president-box > p {
   font-size: 2.4rem;
   color: #333;
 }
 
-.about-us > main > .members > .president-wrapper > .president-box > p > span {
+.about-us > .members > .president-wrapper > .president-box > p > span {
   font-size: 3.6rem;
 }
 
-.about-us > main > .members > .president-wrapper > .president-txt {
+.about-us > .members > .president-wrapper > .president-txt {
   border: 1px solid #333;
   width: 109rem;
   height: 53rem;
@@ -519,7 +519,7 @@ footer > a p {
   position: relative;
 }
 
-.about-us > main > .members > .president-wrapper > .president-txt::before {
+.about-us > .members > .president-wrapper > .president-txt::before {
   display: block;
   content: "";
   width: 109rem;
@@ -531,7 +531,7 @@ footer > a p {
   z-index: -1;
 }
 
-.about-us > main > .members > .president-wrapper > .president-txt::after {
+.about-us > .members > .president-wrapper > .president-txt::after {
   display: block;
   content: "";
   width: 109rem;
@@ -543,21 +543,21 @@ footer > a p {
   z-index: -1;
 }
 
-.about-us > main > .members > .president-wrapper > .president-txt > p {
+.about-us > .members > .president-wrapper > .president-txt > p {
   color: #333;
   font-size: 2.2rem;
   line-height: 1.9;
   padding-right: 4rem;
 }
 
-.about-us > main > .members > .president-wrapper > .president-txt > p:first-of-type {
+.about-us > .members > .president-wrapper > .president-txt > p:first-of-type {
   font-size: 3.6rem;
   font-weight: bold;
   position: relative;
   margin-bottom: 3rem;
 }
 
-.about-us > main > .members > .president-wrapper > .president-txt > p:first-of-type::after {
+.about-us > .members > .president-wrapper > .president-txt > p:first-of-type::after {
   display: block;
   content: "";
   width: 25rem;
@@ -568,23 +568,192 @@ footer > a p {
   left: 0;
 }
 
-.about-us > main > .members > .members-wrapper {
+.about-us > .members > .members-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.about-us > main > .members > .members-wrapper > .members-box > img {
+.about-us > .members > .members-wrapper > .members-box > img {
   max-width: 53rem;
   margin-bottom: 0.6rem;
 }
 
-.about-us > main > .members > .members-wrapper > .members-box > p {
+.about-us > .members > .members-wrapper > .members-box > p {
   font-size: 2.4rem;
   color: #333;
 }
 
-.about-us > main > .members > .members-wrapper > .members-box > p > span {
+.about-us > .members > .members-wrapper > .members-box > p > span {
   font-size: 3.6rem;
+}
+
+header > h1 > a {
+  display: block;
+  width: 12rem;
+  height: 36.2rem;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(/step/img/about-us-pc/logo-header.png) no-repeat center center/7.9rem 28.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  transition: 0.7s;
+}
+
+header > h1.slide > a {
+  background: url(/step/img/menu-pc/logo.png) no-repeat center center/7.9rem 28.2rem;
+}
+
+header > #g-nav-btn {
+  width: 4.5rem;
+  height: 12.6rem;
+  position: fixed;
+  top: 4rem;
+  z-index: 11;
+  right: 3.75rem;
+  cursor: pointer;
+}
+
+header > #g-nav-btn > .hamburger {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: relative;
+}
+
+header > #g-nav-btn > .hamburger > span {
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header > #g-nav-btn > .hamburger > span::after {
+  display: block;
+  content: "";
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: #333;
+  position: absolute;
+  top: 3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header > #g-nav-btn > p {
+  width: 7.1rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
+  color: #333;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  bottom: -5.6rem;
+  left: -1.3rem;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header > #g-nav-btn.slide > .hamburger > span {
+  background-color: #fff;
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+header > #g-nav-btn.slide > .hamburger > span::after {
+  background-color: #fff;
+  top: 0;
+  transform: rotate(-90deg);
+}
+
+header > #g-nav-btn.slide > p {
+  color: #fff;
+}
+
+header > #g-nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: #44768c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(100%, 0);
+  z-index: 10;
+  transition: 0.5s;
+}
+
+header > #g-nav > ul {
+  width: 40rem;
+  margin: 34rem auto 0;
+}
+
+header > #g-nav > ul > li {
+  margin-bottom: 2.5rem;
+}
+
+header > #g-nav > ul > li > a {
+  display: block;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  height: 6.5rem;
+}
+
+header > #g-nav > ul > li > a > span {
+  display: inline-block;
+  height: 6.5rem;
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header > #g-nav > ul > li > a > span::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-110%);
+  transition: 0.2s;
+}
+
+header > #g-nav > ul > li > a > span:hover::after {
+  transform: translateX(0);
+}
+
+header > #g-nav.slide {
+  transform: translate(0, 0);
+}
+
+header > .contact-btn {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: fixed;
+  top: 84.7rem;
+  right: 3.6rem;
+}
+
+header > .contact-btn > a {
+  display: block;
+}
+
+header > .contact-btn > a > img {
+  width: 100%;
 }
 
 .contact-page {
