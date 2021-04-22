@@ -56,9 +56,9 @@ item
 #7-inoue-ContactPage-PriceTable  
 #8-inoue-ContactPage-Contact  
 #9-inoue-body  
-#10  
+#10-inoue-footer
 #11-umezawa-AboutUsPage-members  
-#12  
+#12-inoue-ContactPage-Contact02
 #13  
 #14  
 #15  
