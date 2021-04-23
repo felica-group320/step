@@ -33,18 +33,30 @@
 footer{
   height: 61rem;
   background: $main-color;
-  padding: 15.5rem 58rem 0;
+  padding: 15.5rem 59.5rem 0;
   text-align: center;
+  @include tab{
+  padding: 10.7rem 18.7rem 0;
+  }
   >img{
     width: 36.5rem;
     height: 10.3rem;
     margin-bottom: 4.7rem;
+    @include tab{
+      margin-bottom: 4rem;
+    }
   }
   >p{
     color: #fff;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 1.5;
+    @include tab{
+      font-size: 3.6rem;
+      &:nth-of-type(2){
+        font-size: 2.4rem;
+      }
+    }
   }
   >a{
     display: flex;
@@ -52,14 +64,27 @@ footer{
     >img{
       width: 4.5rem;
       height: 4.5rem;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      @include tab{
+        margin-top: 6rem;
+      }
     }
-    p{
+    >p{
       color: #fff;
       font-weight: bold;
       font-size: 2.4rem;
       line-height: calc(36 / 20);
       margin: 2.3rem 6.4rem 12.7rem 0;
+      @include tab{
+        line-height: calc(36 / 24);
+        margin: 3.3rem 6.4rem 7.1rem 0;
+      }
+      .br-sp{
+        display: none;
+        @include tab{
+          display: block;
+        }
+      }
     }
   }
 }

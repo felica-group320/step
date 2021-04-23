@@ -251,6 +251,12 @@ html {
   font-size: calc(100vw / 192);
 }
 
+@media (max-width: 800px) {
+  html {
+    font-size: calc(100vw / 80);
+  }
+}
+
 body {
   font-family: 'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
 }
@@ -294,8 +300,14 @@ body {
 footer {
   height: 61rem;
   background: #44768c;
-  padding: 15.5rem 58rem 0;
+  padding: 15.5rem 59.5rem 0;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  footer {
+    padding: 10.7rem 18.7rem 0;
+  }
 }
 
 footer > img {
@@ -304,11 +316,26 @@ footer > img {
   margin-bottom: 4.7rem;
 }
 
+@media (max-width: 800px) {
+  footer > img {
+    margin-bottom: 4rem;
+  }
+}
+
 footer > p {
   color: #fff;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  footer > p {
+    font-size: 3.6rem;
+  }
+  footer > p:nth-of-type(2) {
+    font-size: 2.4rem;
+  }
 }
 
 footer > a {
@@ -319,15 +346,38 @@ footer > a {
 footer > a > img {
   width: 4.5rem;
   height: 4.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
-footer > a p {
+@media (max-width: 800px) {
+  footer > a > img {
+    margin-top: 6rem;
+  }
+}
+
+footer > a > p {
   color: #fff;
   font-weight: bold;
   font-size: 2.4rem;
   line-height: calc(36 / 20);
   margin: 2.3rem 6.4rem 12.7rem 0;
+}
+
+@media (max-width: 800px) {
+  footer > a > p {
+    line-height: calc(36 / 24);
+    margin: 3.3rem 6.4rem 7.1rem 0;
+  }
+}
+
+footer > a > p .br-sp {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  footer > a > p .br-sp {
+    display: block;
+  }
 }
 
 .about-us > .key-visual {
@@ -718,6 +768,13 @@ header > .contact-btn > a > img {
   padding: 0 12rem;
 }
 
+@media (max-width: 800px) {
+  .contact-page {
+    padding: 0 2rem;
+    padding-top: 10rem;
+  }
+}
+
 .contact-page .key-visual {
   margin: 0 0 7.1rem;
   max-width: 168rem;
@@ -725,11 +782,38 @@ header > .contact-btn > a > img {
   position: relative;
 }
 
-.contact-page .key-visual > img {
+@media (max-width: 800px) {
+  .contact-page .key-visual {
+    max-width: 76rem;
+    max-height: 60rem;
+  }
+}
+
+.contact-page .key-visual > .img-pc {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: -2;
+}
+
+@media (max-width: 800px) {
+  .contact-page .key-visual > .img-pc {
+    display: none;
+  }
+}
+
+.contact-page .key-visual > .img-sp {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .contact-page .key-visual > .img-sp {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -2;
+  }
 }
 
 .contact-page .key-visual > h2 {
@@ -744,6 +828,18 @@ header > .contact-btn > a > img {
   color: #333;
 }
 
+@media (max-width: 800px) {
+  .contact-page .key-visual > h2 {
+    font-size: 2.4rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 30.5rem;
+    height: 10rem;
+    padding: 0;
+    padding: 1.2rem 1rem 0.6rem 2.9rem;
+  }
+}
+
 .contact-page .key-visual > h2::before {
   content: "";
   display: block;
@@ -756,15 +852,30 @@ header > .contact-btn > a > img {
   z-index: -1;
 }
 
+@media (max-width: 800px) {
+  .contact-page .key-visual > h2::before {
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
 .contact-page .key-visual > h2::after {
   content: "";
   display: block;
   width: 75rem;
-  height: 4px;
+  height: 0.4rem;
   background: #f3e42b;
   position: absolute;
   bottom: 9.8rem;
   z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .contact-page .key-visual > h2::after {
+    width: 26rem;
+    bottom: 4.8rem;
+    left: 3rem;
+  }
 }
 
 .contact-page .key-visual > h2 > span {
@@ -772,8 +883,16 @@ header > .contact-btn > a > img {
   line-height: 1.5;
 }
 
+@media (max-width: 800px) {
+  .contact-page .key-visual > h2 > span {
+    padding-left: 0.7rem;
+    line-height: 2.5;
+  }
+}
+
 .contact-page .price-table {
-  margin-bottom: 9.5rem;
+  margin-bottom: 10.5rem;
+  padding: 0 4.5rem;
 }
 
 .contact-page .price-table > h3 {
@@ -783,11 +902,26 @@ header > .contact-btn > a > img {
   margin-bottom: 6.5rem;
 }
 
+@media (max-width: 800px) {
+  .contact-page .price-table > h3 {
+    font-size: 4.8rem;
+    padding-top: 0.5rem;
+    margin-bottom: 3.7rem;
+  }
+}
+
 .contact-page .price-table > h3 > span {
   display: block;
   font-size: 3.2rem;
   color: #333;
   line-height: 0.4;
+}
+
+@media (max-width: 800px) {
+  .contact-page .price-table > h3 > span {
+    padding-top: 0.3rem;
+    padding-left: 0.8rem;
+  }
 }
 
 .contact-page .price-table > .table-container > table {
@@ -821,9 +955,23 @@ header > .contact-btn > a > img {
   font-family: sans-serif;
 }
 
+@media (max-width: 800px) {
+  .contact-page .price-table > .table-container > table tr > th {
+    font-size: 2.4rem;
+    width: 41rem;
+    height: 5rem;
+  }
+}
+
 .contact-page .price-table > .table-container > table tr > th + th {
   width: 65.6rem;
   background: #b9dfec;
+}
+
+@media (max-width: 800px) {
+  .contact-page .price-table > .table-container > table tr > th + th {
+    width: 26rem;
+  }
 }
 
 .contact-page .price-table > .table-container > table tr > td {
@@ -833,6 +981,13 @@ header > .contact-btn > a > img {
   font-family: sans-serif;
   text-align: center;
   font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .contact-page .price-table > .table-container > table tr > td {
+    font-size: 1.7rem;
+    height: 5rem;
+  }
 }
 
 .contact-page .price-table > .table-container > table tr > td span {
@@ -854,7 +1009,8 @@ header > .contact-btn > a > img {
 }
 
 .contact-page > .contact {
-  margin-bottom: 12rem;
+  margin-bottom: 19rem;
+  padding: 0 4.5rem;
 }
 
 .contact-page > .contact > h3 {
@@ -864,11 +1020,25 @@ header > .contact-btn > a > img {
   margin-bottom: 6.5rem;
 }
 
+@media (max-width: 800px) {
+  .contact-page > .contact > h3 {
+    font-size: 4.8rem;
+    margin-bottom: 3.7rem;
+  }
+}
+
 .contact-page > .contact > h3 > span {
   display: block;
   font-size: 3.2rem;
   color: #333;
   line-height: 0.4;
+}
+
+@media (max-width: 800px) {
+  .contact-page > .contact > h3 > span {
+    padding-top: 0.3rem;
+    font-size: 3rem;
+  }
 }
 
 .contact-page > .contact > .contact-container {
@@ -879,6 +1049,12 @@ header > .contact-btn > a > img {
   font-family: sans-serif;
   font-weight: 600;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container {
+    margin: 0 0 0 3rem;
+  }
 }
 
 .contact-page > .contact > .contact-container::after {
@@ -946,244 +1122,326 @@ header > .contact-btn > a > img {
 }
 
 .contact-page > .contact > .contact-container .step li p {
-  width: 4rem;
+  width: 5rem;
   font-size: 1.6rem;
   position: absolute;
   top: 3rem;
   left: -0.7rem;
 }
 
-.contact-page > .contact > .contact-container > dl:nth-of-type(2) > dd {
+.contact-page > .contact > .contact-container #g-form > dl:nth-of-type(2) > dd {
   height: 21rem;
 }
 
-.contact-page > .contact > .contact-container > dl dt {
+.contact-page > .contact > .contact-container #g-form > dl dt {
   font-size: 2rem;
   margin-bottom: 0.7rem;
 }
 
-.contact-page > .contact > .contact-container > dl dt:nth-of-type(n+2) {
+.contact-page > .contact > .contact-container #g-form > dl dt:nth-of-type(n+2) {
   margin-bottom: 1.1rem;
 }
 
-.contact-page > .contact > .contact-container > dl dt > span {
+.contact-page > .contact > .contact-container #g-form > dl dt > span {
   color: #f3e42b;
 }
 
-.contact-page > .contact > .contact-container > dl small {
+.contact-page > .contact > .contact-container #g-form > dl small {
   display: block;
   font-size: 1.8rem;
   color: #f3e42b;
   margin-bottom: 0.6rem;
 }
 
-.contact-page > .contact > .contact-container > dl dd {
+.contact-page > .contact > .contact-container #g-form > dl dd {
   height: 8rem;
   border: 0.1rem solid #707070;
   margin-bottom: 3.2rem;
+  position: relative;
+  z-index: 3;
 }
 
-.contact-page > .contact > .contact-container > dl dd > select {
+.contact-page > .contact > .contact-container #g-form > dl dd img {
+  width: 2.1rem;
+  height: 2.1rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2rem;
+  margin: auto;
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > dl dd img {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > dl dd > select {
   width: 100%;
   height: 7.7rem;
   padding: 1rem 2rem;
   font-size: 1.8rem;
+  position: relative;
+  z-index: 2;
 }
 
-.contact-page > .contact > .contact-container > dl dd > textarea {
+.contact-page > .contact > .contact-container #g-form > dl dd > textarea {
   width: 100%;
   height: 20.8rem;
   padding: 1rem 2rem;
   font-size: 1.8rem;
 }
 
-.contact-page > .contact > .contact-container > dl > .policy {
+.contact-page > .contact > .contact-container #g-form > dl > .policy {
   background: #fff;
   padding: 2rem;
   overflow-y: scroll;
   height: 20rem;
 }
 
-.contact-page > .contact > .contact-container > dl > .policy > p {
+.contact-page > .contact > .contact-container #g-form > dl > .policy > p {
   font-size: 1.6rem;
   text-align-last: left;
   line-height: 1.5;
   color: #333;
 }
 
-.contact-page > .contact > .contact-container > .name-container {
+.contact-page > .contact > .contact-container #g-form > .name-container {
   display: flex;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .name-container {
+    display: block;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper {
   width: 50%;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dt {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper {
+    width: 100%;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper > dt {
   font-size: 2rem;
   margin-bottom: 0.7rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dt:nth-of-type(n+2) {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper > dt:nth-of-type(n+2) {
   margin-bottom: 1.1rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dt > span {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper > dt > span {
   color: #f3e42b;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper > dd {
   height: 8rem;
   border: 0.1rem solid #707070;
   margin-bottom: 3.2rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd:nth-of-type(n+2) {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper > dd:nth-of-type(n+2) {
   height: 7rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd:nth-of-type(n+6) {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper > dd:nth-of-type(n+6) {
   height: 21rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd input[type="text"], .contact-page > .contact > .contact-container > .name-container > .name-wrapper > dd input[type="email"] {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper > dd input[type="text"], .contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper > dd input[type="email"] {
   width: 100%;
   height: 7.7rem;
   padding: 1rem 2rem;
   font-size: 1.8rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf {
   width: 50%;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dt {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf {
+    width: 100%;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dt {
   font-size: 2rem;
   margin-bottom: 0.7rem;
   opacity: 0;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dt:nth-of-type(n+2) {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dt {
+    opacity: 1;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dt:nth-of-type(n+2) {
   margin-bottom: 1.1rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dt > span {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dt > span {
   color: #f3e42b;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dd {
   height: 8rem;
   border: 0.1rem solid #707070;
   border-left: none;
   margin-bottom: 3.2rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd:nth-of-type(n+2) {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dd {
+    border: 0.1rem solid #707070;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dd:nth-of-type(n+2) {
   height: 7rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd:nth-of-type(n+6) {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dd:nth-of-type(n+6) {
   height: 21rem;
 }
 
-.contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd input[type="text"], .contact-page > .contact > .contact-container > .name-container > .name-wrapper-conf > dd input[type="email"] {
+.contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dd input[type="text"], .contact-page > .contact > .contact-container #g-form > .name-container > .name-wrapper-conf > dd input[type="email"] {
   width: 100%;
   height: 7.7rem;
   padding: 1rem 2rem;
   font-size: 1.8rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container {
+.contact-page > .contact > .contact-container #g-form > .mail-container {
   display: flex;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .mail-container {
+    display: block;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper {
   width: 50%;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dt {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper {
+    width: 100%;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper > dt {
   font-size: 2rem;
   margin-bottom: 0.7rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dt:nth-of-type(n+2) {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper > dt:nth-of-type(n+2) {
   margin-bottom: 1.1rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dt > span {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper > dt > span {
   color: #f3e42b;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper > dd {
   height: 8rem;
   border: 0.1rem solid #707070;
   margin-bottom: 3.2rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd:nth-of-type(n+2) {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper > dd:nth-of-type(n+2) {
   height: 7rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd:nth-of-type(n+6) {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper > dd:nth-of-type(n+6) {
   height: 21rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd input[type="text"], .contact-page > .contact > .contact-container > .mail-container > .mail-wrapper > dd input[type="email"] {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper > dd input[type="text"], .contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper > dd input[type="email"] {
   width: 100%;
   height: 7.7rem;
   padding: 1rem 2rem;
   font-size: 1.8rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf {
   width: 50%;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dt {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf {
+    width: 100%;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dt {
   font-size: 2rem;
   margin-bottom: 0.7rem;
   opacity: 0;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dt:nth-of-type(n+2) {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dt {
+    opacity: 1;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dt:nth-of-type(n+2) {
   margin-bottom: 1.1rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dt > span {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dt > span {
   color: #f3e42b;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dd {
   height: 8rem;
   border: 0.1rem solid #707070;
   border-left: none;
   margin-bottom: 3.2rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd:nth-of-type(n+2) {
+@media (max-width: 800px) {
+  .contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dd {
+    border: 0.1rem solid #707070;
+  }
+}
+
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dd:nth-of-type(n+2) {
   height: 7rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd:nth-of-type(n+6) {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dd:nth-of-type(n+6) {
   height: 21rem;
 }
 
-.contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd input[type="text"], .contact-page > .contact > .contact-container > .mail-container > .mail-wrapper-conf > dd input[type="email"] {
+.contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dd input[type="text"], .contact-page > .contact > .contact-container #g-form > .mail-container > .mail-wrapper-conf > dd input[type="email"] {
   width: 100%;
   height: 7.7rem;
   padding: 1rem 2rem;
   font-size: 1.8rem;
 }
 
-.contact-page > .contact > .contact-container .agree-container {
+.contact-page > .contact > .contact-container #g-form > .agree-container {
   text-align: center;
 }
 
-.contact-page > .contact > .contact-container .agree-container .agree-wrapper {
+.contact-page > .contact > .contact-container #g-form > .agree-container .agree-wrapper {
   display: inline-block;
 }
 
-.contact-page > .contact > .contact-container .agree-container .agree-wrapper > label {
+.contact-page > .contact > .contact-container #g-form > .agree-container .agree-wrapper > label {
   display: flex;
   align-items: center;
   color: #333;
@@ -1194,7 +1452,7 @@ header > .contact-btn > a > img {
   line-height: 1.8rem;
 }
 
-.contact-page > .contact > .contact-container .agree-container .agree-wrapper > label span {
+.contact-page > .contact > .contact-container #g-form > .agree-container .agree-wrapper > label span {
   display: block;
   width: 1.5rem;
   height: 1.5rem;
@@ -1204,15 +1462,15 @@ header > .contact-btn > a > img {
   padding: 0.2rem;
 }
 
-.contact-page > .contact > .contact-container .agree-container .agree-wrapper > label span.active {
+.contact-page > .contact > .contact-container #g-form > .agree-container .agree-wrapper > label span.active {
   background: #44768c;
 }
 
-.contact-page > .contact > .contact-container > .form-btn {
+.contact-page > .contact > .contact-container #g-form > .form-btn {
   position: relative;
 }
 
-.contact-page > .contact > .contact-container > .form-btn [type="submit"] {
+.contact-page > .contact > .contact-container #g-form > .form-btn [type="submit"] {
   display: block;
   font-size: 2.1rem;
   font-weight: 600;
@@ -1228,21 +1486,21 @@ header > .contact-btn > a > img {
   transition: 0.4s;
 }
 
-.contact-page > .contact > .contact-container > .form-btn [type="submit"] span {
+.contact-page > .contact > .contact-container #g-form > .form-btn [type="submit"] span {
   display: block;
   font-size: 1.4rem;
   font-weight: 300;
 }
 
-.contact-page > .contact > .contact-container > .form-btn [type="submit"]:hover {
+.contact-page > .contact > .contact-container #g-form > .form-btn [type="submit"]:hover {
   transform: translate(-0.5rem, -0.5rem);
 }
 
-.contact-page > .contact > .contact-container > .form-btn [type="submit"]:hover ~ .button-shadow {
+.contact-page > .contact > .contact-container #g-form > .form-btn [type="submit"]:hover ~ .button-shadow {
   transform: translate(0.5rem, 0.5rem);
 }
 
-.contact-page > .contact > .contact-container > .form-btn > .button-shadow {
+.contact-page > .contact > .contact-container #g-form > .form-btn > .button-shadow {
   width: 50rem;
   height: 12rem;
   background: #f3e42b;
