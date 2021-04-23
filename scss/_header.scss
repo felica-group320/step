@@ -104,9 +104,15 @@ header{
         transition: 0.5s;
         >ul{
             width: 40rem;
-            margin: 34rem auto 0;
+            height: 40%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
             >li{
-                margin-bottom: 2.5rem;
+                height: 20%;
                 >a{
                     display:block;
                     font-size: 5rem;
