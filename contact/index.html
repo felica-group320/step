@@ -15,28 +15,12 @@
 
   <!-- 井上部分 -->
   <header>
-    <h1><a href="/step/index.html">株式会社STEP</a></h1>
-    <div id="g-nav-btn">
-      <div class="hamburger"><span></span></div><!-- .hamburger -->
-      <p>MENU</p>
-    </div><!-- #g-nav-btn -->
-    <nav id="g-nav">
-      <ul>
-        <li><a href="/step/index.html"><span>HOME</span></a></li>
-        <li><a href="#"><span>CONCEPT</span></a></li>
-        <li><a href="#"><span>WORKS</span></a></li>
-        <li><a href="/step/about-us/index.html"><span>ABOUT</span></a></li>
-        <li><a href="/step/contact/index.html"><span>CONTACT</span></a></li>
-      </ul>
-    </nav><!-- .g-nav -->
-    <div class="contact-btn">
-      <a href="#"><img src="/step/img/top-pc/mail.png" alt=""></a>
-    </div><!-- .contact-btn -->
   </header>
 
   <main class="contact-page">
     <div class="key-visual">
-      <img src="/step/img/contact-pc/contact.jpg" alt="" width="1680" height="1000">
+      <img class="img-pc" src="/step/img/contact-pc/contact.jpg" alt="" width="1680" height="1000">
+      <img class="img-sp" src="/step/img/contact-sp/unity.jpg" alt="" width="760" height="600">
       <h2>CONTACT<br><span>料金表＆お問い合わせ</span></h2>
     </div>
   
@@ -83,76 +67,79 @@
           <li><p>確認</p></li>
           <li><p>完了</p></li>
         </ul>
-        <dl>
-          <dt><span>※</span>お問い合わせ内容</dt>
-          <small>この項目は記入必須です。</small>
-          <dd>
-            <select name="item">
-              <option value="お仕事依頼">お仕事依頼</option>
-              <option value="グッズについて">グッズについて</option>
-              <option value="その他">その他</option>
-            </select>
-          </dd>
-        </dl>
-        <div class="name-container">          
-          <dl class="name-wrapper">
-            <dt><span>※</span>お名前</dt>
-            <dd><input type="text" name="name" required placeholder="お名前をご入力ください"></dd>
+        <form id="g-form" action="confirm.php" method="post">
+          <dl>
+            <dt><span>※</span>お問い合わせ項目</dt>
+            <small>この項目は記入必須です。</small>
+            <dd>
+              <select name="item">
+                <option value="詳しいお見積もりの相談">詳しいお見積もりの相談</option>
+                <option value="ご訪問日程の確認">ご訪問日程の確認</option>
+                <option value="その他">その他</option>
+              </select>
+              <img src="/step/img/contact-pc/sitayajirusi.png" alt="">
+            </dd>
           </dl>
-          <div class="name-wrapper-conf">
-            <dt><span>※</span>お名前(カナ)</dt>
-            <dd><input type="text" name="name" required placeholder="フリガナをご入力ください"></dd>
+          <div class="name-container">          
+            <dl class="name-wrapper">
+              <dt><span>※</span>お名前</dt>
+              <dd><input type="text" name="name" required placeholder="お名前をご入力ください"></dd>
+            </dl>
+            <div class="name-wrapper-conf">
+              <dt><span>※</span>お名前(カナ)</dt>
+              <dd><input type="text" name="name02" required placeholder="フリガナをご入力ください"></dd>
+            </div>
           </div>
-        </div>
-        <div class="mail-container">
-          <dl class="mail-wrapper">
-            <dt><span>※</span>メールアドレス</dt>
-            <dd><input type="email" name="email" required placeholder="メールアドレスをご入力ください"></dd>
-          </dl>
-          <dl class="mail-wrapper-conf">
-            <dt><span>※</span>メールアドレス再入力</dt>
-            <dd><input type="email" name="email" required placeholder="もう一度をご入力ください"></dd>
-          </dl>
-        </div>
-        <dl>
-          <dt><span>※</span>お問い合わせ内容</dt>
-          <dd><textarea name="message" required placeholder="お問い合わせ内容をご入力ください"></textarea></dd>
-          <dt>個人情報保護方針</dt>
-          <dd class="policy">
-            <p>1. 個人情報の定義<br>
-              本プライバシーポリシーにおける、「個人情報」とは、個人情報の保護に関する法律規定される「個人情報」及び当社サービスの利用に係るパスワードを指します。<br><br>
-             2. 個人情報の取得<br>
-              当社は、利用目的の達成に必要な範囲で、個人情報を適正に取得し、不正の手段により取得することはありません。<br><br>
-             3. 利用目的<br>
-              当社は、取得した個人情報を以下の目的で利用します。<br>
-             ①当社サービスのおける商品の発送、関連するアフターサービス、新商品サービスに関する情報の通知<br>
-             ②当社サービスに関するお問い合わせ等への対応<br>
-             ③当社サービスに関する規約等の変更等の通知<br><br>
-             4. 第三者提供<br>
-              当社は、法令に定められた場合を除き、あらかじめ利用者の同意を得ないで、第三者（日本国外にあるも者を含みます。）に個人情報を提供しません。<br><br>
-             5. 開示、訂正、利用停止、削除<br>
-              当社は、利用者から個人情報の開示、訂正、利用停止、削除を求められたときは、法令に定められた場合を除き、本人確認の上で、遅滞なく開示を行います。ただし、個人情報の開示につきましては、１件あたり１，０００円の手数料を頂戴しておりますので、あらかじめご了承ください。<br><br>
-             6. お問い合わせ窓口<br>
-              個人情報の取り扱いに関するお問い合わせは、こちらのページからお願いします。<br><br>
-             7. プライバシーポリシー<br>
-             当社は、必要に応じて、本プライバシーポリシーを変更いたします。
-              なお、本プライバシーポリシーを変更する場合は、その内容を当社のウェブサイト上
-             で表示いたします。<br><br>
-             【2021年5月1日制定】<br></p>
-            <!-- 【●年●月●日改訂】</p> -->
-          </dd>
-        </dl>
-
-        <div class="agree-container" id="agree">
-          <div class="agree-wrapper">
-            <label for="policy-check" class="policy-txt"><span id="agree-box"></span>上記の事項に同意の上、送信します</label>
+          <div class="mail-container">
+            <dl class="mail-wrapper">
+              <dt><span>※</span>メールアドレス</dt>
+              <dd><input type="email" name="email" required placeholder="メールアドレスをご入力ください"></dd>
+            </dl>
+            <dl class="mail-wrapper-conf">
+              <dt><span>※</span>メールアドレス再入力</dt>
+              <dd><input type="email" name="email02" required placeholder="もう一度をご入力ください"></dd>
+            </dl>
           </div>
-        </div>
+          <dl>
+            <dt><span>※</span>お問い合わせ内容</dt>
+            <dd><textarea name="message" required placeholder="お問い合わせ内容をご入力ください"></textarea></dd>
+            <dt>個人情報保護方針</dt>
+            <dd class="policy">
+              <p>1. 個人情報の定義<br>
+                本プライバシーポリシーにおける、「個人情報」とは、個人情報の保護に関する法律規定される「個人情報」及び当社サービスの利用に係るパスワードを指します。<br><br>
+               2. 個人情報の取得<br>
+                当社は、利用目的の達成に必要な範囲で、個人情報を適正に取得し、不正の手段により取得することはありません。<br><br>
+               3. 利用目的<br>
+                当社は、取得した個人情報を以下の目的で利用します。<br>
+               ①当社サービスのおける商品の発送、関連するアフターサービス、新商品サービスに関する情報の通知<br>
+               ②当社サービスに関するお問い合わせ等への対応<br>
+               ③当社サービスに関する規約等の変更等の通知<br><br>
+               4. 第三者提供<br>
+                当社は、法令に定められた場合を除き、あらかじめ利用者の同意を得ないで、第三者（日本国外にあるも者を含みます。）に個人情報を提供しません。<br><br>
+               5. 開示、訂正、利用停止、削除<br>
+                当社は、利用者から個人情報の開示、訂正、利用停止、削除を求められたときは、法令に定められた場合を除き、本人確認の上で、遅滞なく開示を行います。ただし、個人情報の開示につきましては、１件あたり１，０００円の手数料を頂戴しておりますので、あらかじめご了承ください。<br><br>
+               6. お問い合わせ窓口<br>
+                個人情報の取り扱いに関するお問い合わせは、こちらのページからお願いします。<br><br>
+               7. プライバシーポリシー<br>
+               当社は、必要に応じて、本プライバシーポリシーを変更いたします。
+                なお、本プライバシーポリシーを変更する場合は、その内容を当社のウェブサイト上
+               で表示いたします。<br><br>
+               【2021年5月1日制定】<br></p>
+              <!-- 【●年●月●日改訂】</p> -->
+            </dd>
+          </dl>
 
-        <div class="form-btn">
-          <button name="submit" type="submit">CONFIRM<br><span>確認画面へ</span></button>
-          <div class="button-shadow"></div>
-        </div>
+          <div class="agree-container" id="agree">
+            <div class="agree-wrapper">
+              <label for="policy-check" class="policy-txt"><span id="agree-box"></span>上記の事項に同意の上、送信します</label>
+            </div>
+          </div>
+  
+          <div class="form-btn">
+            <button name="submit" type="submit">CONFIRM<br><span>確認画面へ</span></button>
+            <div class="button-shadow"></div>
+          </div>
+        </form>
       </div>
     </article>
   </main>
@@ -167,7 +154,7 @@
     <p>株式会社 STEP</p>
     <a href="https://www.google.co.jp/maps/place/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%95%E3%82%A1%E3%82%A6%E3%83%B3%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%95%E3%82%A7%E3%83%AA%E3%82%ABTA/@35.7259364,139.7117068,17z/data=!3m2!4b1!5s0x60188d69a1bdee07:0xf93a9b8d9839c72a!4m5!3m4!1s0x60188d6b8b0de7dd:0xd184e022fc8bf0e6!8m2!3d35.7259321!4d139.7138955?hl=ja" target="_blank" rel="noopener noreferrer">
       <img src="/step/img/top-pc/map.png" alt="マップの記号">
-      <p>〒171-0022 東京都豊島区南池袋2-12-9 ＫＫビル４Ｆ</p>
+      <p>〒171-0022<br class="br-sp"> 東京都豊島区南池袋2-12-9 ＫＫビル４Ｆ</p>
     </a>
     <p class="copy">&copy;STEP Inc.</p>
   </footer>

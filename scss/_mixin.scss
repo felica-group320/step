@@ -8,6 +8,10 @@ $tab: 800px; // タブレット
 
 html {
   font-size: calc(100vw / 192);
+  @include tab{
+    font-size: calc(100vw / 80);
+  }
+  // background-image: url(/step/img/contact-sp/contact_tab&sp.png);
 }
 
 body{
