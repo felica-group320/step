@@ -10,23 +10,31 @@
                 font-size: 10rem;
                 color: $txt-color;
                 font-weight: bold;
+                position: relative;
+                &::after{
+                    display: block;
+                    content: "";
+                    width: 53rem;
+                    height: 0.5rem;
+                    background-color: $accent-color;
+                    position: absolute;
+                    left: 0;
+                    bottom: 1rem;
+                }
             }
             >ul{
                 >li{
-                    font-size: 3.2rem;
+                    font-size: 5rem;
                     font-weight: bold;
                     color: $txt-color;
                     &:first-of-type{
-                        padding: 0 0 17.3rem 9rem;
+                        padding: 0 0 17.3rem 14rem;
                     }
                     &:nth-of-type(2){
-                        padding: 0 0 17.3rem 23rem;
+                        padding: 0 0 17.3rem 42rem;
                     }
                     &:last-of-type{
-                        padding-left: 45rem;
-                    }
-                    &:nth-of-type(2-n){
-                        margin-bottom: 17.3rem;
+                        padding-left: 80rem;
                     }
                 }
             }

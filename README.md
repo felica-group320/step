@@ -61,7 +61,7 @@ item
 #12-inoue-ContactPage-Contact02  
 #13-umezawa-AboutUsPage-header  
 #14-all  
-#15  
+#15-umezawa-AboutUsPage-nav,members    
 #16-inoue-ContactPage-responsive  
 #17  
 #18  
