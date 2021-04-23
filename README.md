@@ -64,7 +64,7 @@ item
 #15-umezawa-AboutUsPage-nav,members  
 #16-inoue-ContactPage-responsive  
 #17  
-#18  
+#18-inoue-footer02  
 #19  
 #20  
 #21  
