@@ -1,0 +1,45 @@
+
+main{
+  .works{
+    margin-top: 212.5rem;
+    h2{
+      font-size: 6.4rem;
+      line-height: calc(48 / 64);
+      color: $main-color;
+      text-align: center;
+      margin-bottom: 2rem;
+      &::after{
+        content: "";
+        display: block;
+        height: 0.1rem;
+        width: 32rem;
+        text-align: center;
+        background: $accent-color;
+        margin: 2rem auto 0;
+      }
+      span{
+        font-size: 3.6rem;
+        line-height: calc(48 / 36);
+        color: $txt-color;
+      }
+    }
+    p{
+      font-size: 2.4rem;
+      line-height: 2;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 4.5rem;
+    }
+    .works-wrapper{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 7.1rem;
+      img{
+        &:nth-of-type(n+3){
+          margin-top: 6rem;
+        }
+      }
+    }
+  }
+}

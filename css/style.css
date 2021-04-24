@@ -249,6 +249,7 @@ body {
 
 html {
   font-size: calc(100vw / 192);
+  background-image: url(/step/img/top-pc/top_pc.png);
 }
 
 @media (max-width: 800px) {
@@ -259,6 +260,234 @@ html {
 
 body {
   font-family: 'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  opacity: 0.3;
+  overflow-x: hidden;
+}
+
+header > h1 > a {
+  display: block;
+  width: 12rem;
+  height: 36.2rem;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(/step/img/top-pc/logo-header02.png) no-repeat center center/7.9rem 28.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  transition: 0.7s;
+}
+
+header > h1.slide > a {
+  background: url(/step/img/menu-pc/logo.png) no-repeat center center/7.9rem 28.2rem;
+}
+
+header > #g-nav-btn {
+  width: 4.5rem;
+  height: 12.6rem;
+  position: fixed;
+  top: 4rem;
+  z-index: 11;
+  right: 3.75rem;
+  cursor: pointer;
+}
+
+header > #g-nav-btn > .hamburger {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: relative;
+}
+
+header > #g-nav-btn > .hamburger > span {
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header > #g-nav-btn > .hamburger > span::after {
+  display: block;
+  content: "";
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: #333;
+  position: absolute;
+  top: 3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header > #g-nav-btn > p {
+  width: 7.1rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
+  color: #333;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  bottom: -5.6rem;
+  left: -1.3rem;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header > #g-nav-btn.slide > .hamburger > span {
+  background-color: #fff;
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+header > #g-nav-btn.slide > .hamburger > span::after {
+  background-color: #fff;
+  top: 0;
+  transform: rotate(-90deg);
+}
+
+header > #g-nav-btn.slide > p {
+  color: #fff;
+}
+
+header > #g-nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: #44768c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(100%, 0);
+  z-index: 10;
+  transition: 0.5s;
+}
+
+header > #g-nav > ul {
+  width: 40rem;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+header > #g-nav > ul > li {
+  height: 20%;
+}
+
+header > #g-nav > ul > li > a {
+  display: block;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  height: 6.5rem;
+}
+
+header > #g-nav > ul > li > a > span {
+  display: inline-block;
+  height: 6.5rem;
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header > #g-nav > ul > li > a > span::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-110%);
+  transition: 0.2s;
+}
+
+header > #g-nav > ul > li > a > span:hover::after {
+  transform: translateX(0);
+}
+
+header > #g-nav.slide {
+  transform: translate(0, 0);
+}
+
+header > .contact-btn {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: fixed;
+  top: 84.7rem;
+  right: 3.6rem;
+}
+
+header > .contact-btn > a {
+  display: block;
+}
+
+header > .contact-btn > a > img {
+  width: 100%;
+}
+
+main {
+  padding: 0 12rem;
+}
+
+main .works {
+  margin-top: 212.5rem;
+}
+
+main .works h2 {
+  font-size: 6.4rem;
+  line-height: calc(48 / 64);
+  color: #44768c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main .works h2::after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  width: 32rem;
+  text-align: center;
+  background: #f3e42b;
+  margin: 2rem auto 0;
+}
+
+main .works h2 span {
+  font-size: 3.6rem;
+  line-height: calc(48 / 36);
+  color: #333;
+}
+
+main .works p {
+  font-size: 2.4rem;
+  line-height: 2;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+main .works .works-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 7.1rem;
+}
+
+main .works .works-wrapper img:nth-of-type(n+3) {
+  margin-top: 6rem;
 }
 
 .scroll {
@@ -302,6 +531,7 @@ footer {
   background: #44768c;
   padding: 15.5rem 58rem 0;
   text-align: center;
+  margin-top: 100vh;
 }
 
 @media (max-width: 800px) {
@@ -626,181 +856,6 @@ footer > a > p .br-sp {
 
 .about-us > .members > .members-wrapper > .members-box > p:nth-of-type(2) > span {
   font-size: 3.6rem;
-}
-
-header > h1 > a {
-  display: block;
-  width: 12rem;
-  height: 36.2rem;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  background: url(/step/img/top-pc/logo-header02.png) no-repeat center center/7.9rem 28.2rem;
-  position: fixed;
-  top: 0;
-  z-index: 11;
-  transition: 0.7s;
-}
-
-header > h1.slide > a {
-  background: url(/step/img/menu-pc/logo.png) no-repeat center center/7.9rem 28.2rem;
-}
-
-header > #g-nav-btn {
-  width: 4.5rem;
-  height: 12.6rem;
-  position: fixed;
-  top: 4rem;
-  z-index: 11;
-  right: 3.75rem;
-  cursor: pointer;
-}
-
-header > #g-nav-btn > .hamburger {
-  width: 4.5rem;
-  height: 4.5rem;
-  position: relative;
-}
-
-header > #g-nav-btn > .hamburger > span {
-  width: 2.5rem;
-  height: 0.1rem;
-  background-color: #333;
-  position: absolute;
-  top: 0;
-  bottom: 1.5rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: 0.5s;
-}
-
-header > #g-nav-btn > .hamburger > span::after {
-  display: block;
-  content: "";
-  width: 2.5rem;
-  height: 0.1rem;
-  background-color: #333;
-  position: absolute;
-  top: 3rem;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: 0.5s;
-}
-
-header > #g-nav-btn > p {
-  width: 7.1rem;
-  height: 1.8rem;
-  line-height: 1.8rem;
-  font-size: 1.8rem;
-  letter-spacing: 0.5rem;
-  color: #333;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 0;
-  bottom: -5.6rem;
-  left: -1.3rem;
-  right: 0;
-  margin: auto;
-  transition: 0.5s;
-}
-
-header > #g-nav-btn.slide > .hamburger > span {
-  background-color: #fff;
-  bottom: 0;
-  transform: rotate(45deg);
-}
-
-header > #g-nav-btn.slide > .hamburger > span::after {
-  background-color: #fff;
-  top: 0;
-  transform: rotate(-90deg);
-}
-
-header > #g-nav-btn.slide > p {
-  color: #fff;
-}
-
-header > #g-nav {
-  width: 100vw;
-  height: 100vh;
-  background-color: #44768c;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(100%, 0);
-  z-index: 10;
-  transition: 0.5s;
-}
-
-header > #g-nav > ul {
-  width: 40rem;
-  height: 40%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-header > #g-nav > ul > li {
-  height: 20%;
-}
-
-header > #g-nav > ul > li > a {
-  display: block;
-  font-size: 5rem;
-  color: #fff;
-  text-align: center;
-  height: 6.5rem;
-}
-
-header > #g-nav > ul > li > a > span {
-  display: inline-block;
-  height: 6.5rem;
-  padding: 0 1rem;
-  position: relative;
-  overflow: hidden;
-}
-
-header > #g-nav > ul > li > a > span::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 0.4rem;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: translateX(-110%);
-  transition: 0.2s;
-}
-
-header > #g-nav > ul > li > a > span:hover::after {
-  transform: translateX(0);
-}
-
-header > #g-nav.slide {
-  transform: translate(0, 0);
-}
-
-header > .contact-btn {
-  width: 4.5rem;
-  height: 4.5rem;
-  position: fixed;
-  top: 84.7rem;
-  right: 3.6rem;
-}
-
-header > .contact-btn > a {
-  display: block;
-}
-
-header > .contact-btn > a > img {
-  width: 100%;
 }
 
 .contact-page {
