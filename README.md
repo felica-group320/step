@@ -65,8 +65,8 @@ item
 #16-inoue-ContactPage-responsive  
 #17  
 #18-inoue-footer02  
-#19  
-#20  
+#19-inoue-ContactPage-confirm.php  
+#20-inoue-TopPage-works  
 #21  
 #22  
 #23  

@@ -1,0 +1,165 @@
+header{
+    >h1{
+        >a{
+            display: block;
+            width: 12rem;
+            height: 36.2rem;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            background: url(/step/img/top-pc/logo-header02.png)no-repeat center center/7.9rem 28.2rem;
+            position: fixed;
+            top: 0;
+            z-index: 11;
+            transition: 0.7s;
+        }
+    }
+    >h1.slide{
+        >a{
+            background: url(/step/img/menu-pc/logo.png)no-repeat center center/7.9rem 28.2rem;
+        }
+    }
+    >#g-nav-btn{
+        width: 4.5rem;
+        height: 12.6rem;
+        position: fixed;
+        top: 4rem;
+        z-index: 11;
+        right: 3.75rem;
+        cursor: pointer;
+        >.hamburger{
+            width: 4.5rem;
+            height: 4.5rem;
+            position: relative;
+            >span{
+                width: 2.5rem;
+                height: 0.1rem;
+                background-color: $txt-color;
+                position: absolute;
+                top: 0;
+                bottom: 1.5rem;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transition: 0.5s;
+                &::after{
+                    display: block;
+                    content: "";
+                    width: 2.5rem;
+                    height: 0.1rem;
+                    background-color: $txt-color;
+                    position: absolute;
+                    top: 3rem;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    transition: 0.5s;
+                }
+            }
+        }
+        >p{
+            width: 7.1rem;
+            height: 1.8rem;
+            line-height: 1.8rem;
+            font-size: 1.8rem;
+            letter-spacing: 0.5rem;
+            color: $txt-color;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 0;
+            bottom: -5.6rem;
+            left: -1.3rem;
+            right: 0;
+            margin: auto;
+            transition: 0.5s;
+        }
+    }
+    >#g-nav-btn.slide{
+        >.hamburger{
+            >span{
+                background-color: $base-color;
+                bottom: 0;
+                transform: rotate(45deg);
+                &::after{
+                    background-color: $base-color;
+                    top: 0;
+                    transform: rotate(-90deg);
+                }
+            }
+        }
+        >p{
+            color: $base-color;
+        }
+    }
+    >#g-nav{
+        width: 100vw;
+        height: 100vh;
+        background-color: $main-color;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(100%,0);
+        z-index: 10;
+        transition: 0.5s;
+        >ul{
+            width: 40rem;
+            height: 40%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            >li{
+                height: 20%;
+                >a{
+                    display:block;
+                    font-size: 5rem;
+                    color: $base-color;
+                    text-align: center;
+                    height: 6.5rem;
+                    >span{
+                        display: inline-block;
+                        height: 6.5rem;
+                        padding: 0 1rem;
+                        position: relative;
+                        overflow: hidden;
+                        &::after{
+                            display: block;
+                            content: "";
+                            width: 100%;
+                            height: 0.4rem;
+                            background-color: $base-color;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            transform: translateX(-110%);
+                            transition: 0.2s;
+                        }
+                        &:hover::after{
+                            transform: translateX(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >#g-nav.slide{
+        transform: translate(0,0);
+    }
+    >.contact-btn{
+        width: 4.5rem;
+        height: 4.5rem;
+        position: fixed;
+        top: 84.7rem;
+        right: 3.6rem;
+        >a{
+            display: block;
+            >img{
+                width: 100%;
+            }
+        }
+    }
+
+}
