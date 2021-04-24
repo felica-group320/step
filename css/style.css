@@ -249,7 +249,6 @@ body {
 
 html {
   font-size: calc(100vw / 192);
-  background-image: url(/step/img/top-pc/top_pc.png);
 }
 
 @media (max-width: 800px) {
@@ -260,7 +259,6 @@ html {
 
 body {
   font-family: 'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
-  opacity: 0.3;
   overflow-x: hidden;
 }
 
@@ -486,8 +484,18 @@ main .works .works-wrapper {
   margin-bottom: 7.1rem;
 }
 
-main .works .works-wrapper img:nth-of-type(n+3) {
+main .works .works-wrapper .works-box {
+  max-width: 81rem;
+  max-height: 60.8rem;
+}
+
+main .works .works-wrapper .works-box:nth-of-type(n+3) > img {
   margin-top: 6rem;
+}
+
+main .works .works-wrapper .works-box img {
+  width: 100%;
+  height: 100%;
 }
 
 .scroll {
