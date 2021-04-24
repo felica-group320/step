@@ -2,4 +2,7 @@
 main{
   padding: 0 12rem;
   margin-bottom: 20vh;
+  @include tab{
+    padding: 0 2rem;
+  }
 }
