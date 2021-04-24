@@ -2,6 +2,7 @@
 main{
   .works{
     margin-top: 212.5rem;
+    margin-bottom: 9.5rem;
     h2{
       font-size: 6.4rem;
       line-height: calc(48 / 64);
@@ -34,16 +35,17 @@ main{
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-bottom: 7.1rem;
-      .works-box{
-        max-width: 81rem;
-        max-height: 60.8rem;
-        &:nth-of-type(n+3)>img{
+      a{
+        &:nth-of-type(n+3){
           margin-top: 6rem;
         }
-        img{
-          width: 100%;
-          height: 100%;
+        .works-box{
+          max-width: 81rem;
+          max-height: 60.8rem;
+          img{
+            width: 100%;
+            height: 100%;
+          }
         }
       }
     }
