@@ -1,12 +1,9 @@
 
 main{
   .works{
-    margin-top: 262rem;
-    // margin-top: 78.6rem;
+    margin-top: 212.5rem;
+    margin-top: 78.6rem;
     margin-bottom: 9.5rem;
-    @include tab{
-      margin-bottom: 4rem;
-    }
     h2{
       font-size: 6.4rem;
       line-height: calc(48 / 64);
@@ -34,17 +31,11 @@ main{
       font-weight: bold;
       text-align: center;
       margin-bottom: 4.5rem;
-      @include tab{
-        margin-bottom: 0;
-      }
     }
     .works-wrapper{
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      @include tab{
-        display: none;
-      }
       a{
         &:nth-of-type(n+3){
           margin-top: 6rem;
