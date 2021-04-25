@@ -72,7 +72,7 @@ item
 #23-inoue-TopPage-service02  
 #24-inoue-TopPage-works03  
 #25-umezawa-TopPage-AboutUs  
-#26  
+#26-inoue-TopPage-KeyVisual  
 #27  
 #28  
 #29  
