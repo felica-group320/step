@@ -262,6 +262,19 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    height: 10rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 2rem;
+    z-index: 100;
+  }
+}
+
 header > h1 > a {
   display: block;
   width: 12rem;
@@ -276,8 +289,22 @@ header > h1 > a {
   transition: 0.7s;
 }
 
+@media (max-width: 800px) {
+  header > h1 > a {
+    width: 28rem;
+    height: 10rem;
+    background: url(/step/img/top-sp/logo-header.png) no-repeat center center/21.5rem 6rem;
+  }
+}
+
 header > h1.slide > a {
   background: url(/step/img/menu-pc/logo.png) no-repeat center center/7.9rem 28.2rem;
+}
+
+@media (max-width: 800px) {
+  header > h1.slide > a {
+    background: url(/step/img/menu-sp/logo.png) no-repeat center center/21.5rem 6rem;
+  }
 }
 
 header > #g-nav-btn {
@@ -285,15 +312,31 @@ header > #g-nav-btn {
   height: 12.6rem;
   position: fixed;
   top: 4rem;
-  z-index: 11;
   right: 3.75rem;
+  z-index: 11;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  header > #g-nav-btn {
+    width: 11.6rem;
+    height: 4.5rem;
+    top: 2rem;
+    right: 2rem;
+  }
 }
 
 header > #g-nav-btn > .hamburger {
   width: 4.5rem;
   height: 4.5rem;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  header > #g-nav-btn > .hamburger {
+    position: absolute;
+    right: 0;
+  }
 }
 
 header > #g-nav-btn > .hamburger > span {
@@ -341,6 +384,15 @@ header > #g-nav-btn > p {
   transition: 0.5s;
 }
 
+@media (max-width: 800px) {
+  header > #g-nav-btn > p {
+    transform: rotate(0);
+    right: 4rem;
+    bottom: 0;
+    left: 0;
+  }
+}
+
 header > #g-nav-btn.slide > .hamburger > span {
   background-color: #fff;
   bottom: 0;
@@ -358,7 +410,7 @@ header > #g-nav-btn.slide > p {
 }
 
 header > #g-nav {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #44768c;
   position: fixed;
@@ -378,6 +430,12 @@ header > #g-nav > ul {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+@media (max-width: 800px) {
+  header > #g-nav > ul {
+    width: 30rem;
+  }
 }
 
 header > #g-nav > ul > li {
@@ -427,6 +485,13 @@ header > .contact-btn {
   position: fixed;
   top: 84.7rem;
   right: 3.6rem;
+}
+
+@media (max-width: 800px) {
+  header > .contact-btn {
+    top: 2rem;
+    right: 15rem;
+  }
 }
 
 header > .contact-btn > a {
@@ -733,6 +798,126 @@ main .service > .form-btn > .button-shadow {
     width: 24rem;
     height: 6rem;
   }
+}
+
+.top-about-us {
+  display: flex;
+  margin-top: 27rem;
+}
+
+.top-about-us > .about-us-image {
+  width: 82.5rem;
+  height: 82.5rem;
+  position: relative;
+}
+
+.top-about-us > .about-us-image::after {
+  display: block;
+  content: "";
+  background: url(/step/img/mizutama.gif) repeat;
+  width: 70.1rem;
+  height: 99.7rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  margin: auto;
+  z-index: -2;
+}
+
+.top-about-us > .about-us-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-about-us > .about-us-box {
+  padding: 0 0 3rem 4.5rem;
+}
+
+.top-about-us > .about-us-box > h2 {
+  font-size: 10.4rem;
+  color: #44768c;
+  line-height: 0.7;
+  padding: 1rem 14rem 3.5rem 0;
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+.top-about-us > .about-us-box > h2::after {
+  display: block;
+  content: "";
+  width: 53rem;
+  height: 0.4rem;
+  background-color: #f3e42b;
+  position: absolute;
+  bottom: 0;
+  left: 15.5rem;
+}
+
+.top-about-us > .about-us-box > h2 > span {
+  font-size: 5.6rem;
+  color: #333;
+  font-weight: bold;
+  padding-left: 15.5rem;
+}
+
+.top-about-us > .about-us-box > .about-us-txt > p {
+  font-size: 3.3rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 2;
+  text-align: right;
+}
+
+.top-about-us > .about-us-box > .about-us-txt > p:first-of-type {
+  padding-bottom: 7rem;
+}
+
+.top-about-us > .about-us-box > .about-us-txt > p:nth-of-type(2) {
+  margin-bottom: 6rem;
+}
+
+.top-about-us > .about-us-box > .about-us-btn {
+  width: 25rem;
+  height: 8rem;
+  position: relative;
+  margin: 0 0 0 auto;
+}
+
+.top-about-us > .about-us-box > .about-us-btn > a {
+  display: block;
+  font-size: 1.8rem;
+  background-color: #fff;
+  color: #B9DFEC;
+  width: 25rem;
+  height: 8rem;
+  border: 0.2rem solid #44768c;
+  text-align: center;
+  line-height: 8rem;
+  transition: 0.4s;
+}
+
+.top-about-us > .about-us-box > .about-us-btn > a:hover {
+  transform: translate(-0.5rem, -0.5rem);
+}
+
+.top-about-us > .about-us-box > .about-us-btn > a:hover ~ .button-shadow {
+  transform: translate(0.5rem, 0.5rem);
+}
+
+.top-about-us > .about-us-box > .about-us-btn > .button-shadow {
+  width: 25rem;
+  height: 8rem;
+  background-color: #44768c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+  transition: 0.4s;
 }
 
 .scroll {
@@ -1355,246 +1540,6 @@ footer > a > p .br-sp {
   .about-us > .members > .members-wrapper > .members-box:nth-of-type(odd) > p:nth-of-type(2) {
     text-align: right;
   }
-}
-
-@media (max-width: 800px) {
-  header {
-    width: 100%;
-    height: 10rem;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0 2rem;
-    z-index: 100;
-  }
-}
-
-header > h1 > a {
-  display: block;
-  width: 12rem;
-  height: 36.2rem;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  background: url(/step/img/top-pc/logo-header02.png) no-repeat center center/7.9rem 28.2rem;
-  position: fixed;
-  top: 0;
-  z-index: 11;
-  transition: 0.7s;
-}
-
-@media (max-width: 800px) {
-  header > h1 > a {
-    width: 28rem;
-    height: 10rem;
-    background: url(/step/img/top-sp/logo-header.png) no-repeat center center/21.5rem 6rem;
-  }
-}
-
-header > h1.slide > a {
-  background: url(/step/img/menu-pc/logo.png) no-repeat center center/7.9rem 28.2rem;
-}
-
-@media (max-width: 800px) {
-  header > h1.slide > a {
-    background: url(/step/img/menu-sp/logo.png) no-repeat center center/21.5rem 6rem;
-  }
-}
-
-header > #g-nav-btn {
-  width: 4.5rem;
-  height: 12.6rem;
-  position: fixed;
-  top: 4rem;
-  right: 3.75rem;
-  z-index: 11;
-  cursor: pointer;
-}
-
-@media (max-width: 800px) {
-  header > #g-nav-btn {
-    width: 11.6rem;
-    height: 4.5rem;
-    top: 2rem;
-    right: 2rem;
-  }
-}
-
-header > #g-nav-btn > .hamburger {
-  width: 4.5rem;
-  height: 4.5rem;
-  position: relative;
-}
-
-@media (max-width: 800px) {
-  header > #g-nav-btn > .hamburger {
-    position: absolute;
-    right: 0;
-  }
-}
-
-header > #g-nav-btn > .hamburger > span {
-  width: 2.5rem;
-  height: 0.1rem;
-  background-color: #333;
-  position: absolute;
-  top: 0;
-  bottom: 1.5rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: 0.5s;
-}
-
-header > #g-nav-btn > .hamburger > span::after {
-  display: block;
-  content: "";
-  width: 2.5rem;
-  height: 0.1rem;
-  background-color: #333;
-  position: absolute;
-  top: 3rem;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: 0.5s;
-}
-
-header > #g-nav-btn > p {
-  width: 7.1rem;
-  height: 1.8rem;
-  line-height: 1.8rem;
-  font-size: 1.8rem;
-  letter-spacing: 0.5rem;
-  color: #333;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 0;
-  bottom: -5.6rem;
-  left: -1.3rem;
-  right: 0;
-  margin: auto;
-  transition: 0.5s;
-}
-
-@media (max-width: 800px) {
-  header > #g-nav-btn > p {
-    transform: rotate(0);
-    right: 4rem;
-    bottom: 0;
-    left: 0;
-  }
-}
-
-header > #g-nav-btn.slide > .hamburger > span {
-  background-color: #fff;
-  bottom: 0;
-  transform: rotate(45deg);
-}
-
-header > #g-nav-btn.slide > .hamburger > span::after {
-  background-color: #fff;
-  top: 0;
-  transform: rotate(-90deg);
-}
-
-header > #g-nav-btn.slide > p {
-  color: #fff;
-}
-
-header > #g-nav {
-  width: 100%;
-  height: 100vh;
-  background-color: #44768c;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(100%, 0);
-  z-index: 10;
-  transition: 0.5s;
-}
-
-header > #g-nav > ul {
-  width: 40rem;
-  height: 40%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-@media (max-width: 800px) {
-  header > #g-nav > ul {
-    width: 30rem;
-  }
-}
-
-header > #g-nav > ul > li {
-  height: 20%;
-}
-
-header > #g-nav > ul > li > a {
-  display: block;
-  font-size: 5rem;
-  color: #fff;
-  text-align: center;
-  height: 6.5rem;
-}
-
-header > #g-nav > ul > li > a > span {
-  display: inline-block;
-  height: 6.5rem;
-  padding: 0 1rem;
-  position: relative;
-  overflow: hidden;
-}
-
-header > #g-nav > ul > li > a > span::after {
-  display: block;
-  content: "";
-  width: 100%;
-  height: 0.4rem;
-  background-color: #fff;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform: translateX(-110%);
-  transition: 0.2s;
-}
-
-header > #g-nav > ul > li > a > span:hover::after {
-  transform: translateX(0);
-}
-
-header > #g-nav.slide {
-  transform: translate(0, 0);
-}
-
-header > .contact-btn {
-  width: 4.5rem;
-  height: 4.5rem;
-  position: fixed;
-  top: 84.7rem;
-  right: 3.6rem;
-}
-
-@media (max-width: 800px) {
-  header > .contact-btn {
-    top: 2rem;
-    right: 15rem;
-  }
-}
-
-header > .contact-btn > a {
-  display: block;
-}
-
-header > .contact-btn > a > img {
-  width: 100%;
 }
 
 .contact-page {
