@@ -859,30 +859,63 @@ footer > a > p .br-sp {
   padding: 0 12rem;
 }
 
+@media (max-width: 800px) {
+  .about-us > .key-visual {
+    padding: 10rem 2rem 0;
+  }
+}
+
 .about-us > .key-visual > .key-visual-wrapper {
   max-width: 168rem;
-  max-height: 100rem;
+  height: 100rem;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .about-us > .key-visual > .key-visual-wrapper {
+    max-width: 76rem;
+    height: 60rem;
+  }
 }
 
 .about-us > .key-visual > .key-visual-wrapper > h2 {
   background-color: #fff;
-  max-width: 81rem;
+  width: 81rem;
+  height: 20rem;
   font-size: 6.4rem;
   font-weight: bold;
-  padding: 0.6rem 11rem 0.7rem;
+  padding: 1.5rem 11rem 0.7rem;
   line-height: 1.4;
   position: absolute;
   left: 3rem;
   bottom: 3rem;
-  vertical-align: center;
+  vertical-align: bottom;
   color: #333;
+}
+
+@media (max-width: 800px) {
+  .about-us > .key-visual > .key-visual-wrapper > h2 {
+    width: 27.5rem;
+    height: 10rem;
+    font-size: 2.4rem;
+    padding: 0.5rem 0 1.5rem 3rem;
+    line-height: 2;
+    left: 1.5rem;
+    bottom: 1.5rem;
+  }
 }
 
 .about-us > .key-visual > .key-visual-wrapper > h2 > span {
   display: block;
   text-align: right;
   padding-left: 7rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .key-visual > .key-visual-wrapper > h2 > span {
+    padding-left: 2rem;
+    text-align: left;
+  }
 }
 
 .about-us > .key-visual > .key-visual-wrapper > h2::before {
@@ -897,10 +930,17 @@ footer > a > p .br-sp {
   z-index: -3;
 }
 
+@media (max-width: 800px) {
+  .about-us > .key-visual > .key-visual-wrapper > h2::before {
+    left: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
+
 .about-us > .key-visual > .key-visual-wrapper > h2::after {
   display: block;
   content: "";
-  max-width: 59rem;
+  width: 59rem;
   height: 0.4rem;
   background-color: #f3e42b;
   position: absolute;
@@ -909,6 +949,12 @@ footer > a > p .br-sp {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+@media (max-width: 800px) {
+  .about-us > .key-visual > .key-visual-wrapper > h2::after {
+    width: 21.5rem;
+  }
 }
 
 .about-us > .key-visual > .key-visual-wrapper > img {
@@ -920,10 +966,19 @@ footer > a > p .br-sp {
 
 .about-us > .philosophy {
   max-width: 192rem;
-  max-height: 83rem;
+  height: 83rem;
   background: url(/step/img/about-us-pc/step.jpg) no-repeat center center/cover;
   margin: 0 auto 7.1rem;
   padding: 4.2rem 12rem 4.9rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .philosophy {
+    max-width: 80rem;
+    height: 36rem;
+    margin: 0 auto 8rem;
+    padding: 2.3rem 0 2.2rem 4.3rem;
+  }
 }
 
 .about-us > .philosophy > h3 {
@@ -931,6 +986,15 @@ footer > a > p .br-sp {
   color: #333;
   font-weight: bold;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .about-us > .philosophy > h3 {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .about-us > .philosophy > h3::after {
@@ -944,27 +1008,65 @@ footer > a > p .br-sp {
   bottom: 1rem;
 }
 
+@media (max-width: 800px) {
+  .about-us > .philosophy > h3::after {
+    width: 15rem;
+    height: 0.4rem;
+    bottom: 0.5rem;
+  }
+}
+
 .about-us > .philosophy > ul > li {
   font-size: 5rem;
   font-weight: bold;
   color: #333;
 }
 
+@media (max-width: 800px) {
+  .about-us > .philosophy > ul > li {
+    font-size: 3.4rem;
+  }
+}
+
 .about-us > .philosophy > ul > li:first-of-type {
   padding: 0 0 17.3rem 14rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .philosophy > ul > li:first-of-type {
+    padding: 0 0 3rem;
+  }
 }
 
 .about-us > .philosophy > ul > li:nth-of-type(2) {
   padding: 0 0 17.3rem 42rem;
 }
 
+@media (max-width: 800px) {
+  .about-us > .philosophy > ul > li:nth-of-type(2) {
+    padding: 0 0 3rem;
+  }
+}
+
 .about-us > .philosophy > ul > li:last-of-type {
-  padding-left: 80rem;
+  padding-left: 75rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .philosophy > ul > li:last-of-type {
+    padding-left: 0;
+  }
 }
 
 .about-us > .members {
   padding: 0 12rem;
   margin-bottom: 9.5rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members {
+    padding: 0;
+  }
 }
 
 .about-us > .members > h3 {
@@ -975,9 +1077,23 @@ footer > a > p .br-sp {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 800px) {
+  .about-us > .members > h3 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    margin-left: 6.5rem;
+  }
+}
+
 .about-us > .members > h3 > span {
   font-size: 3.2rem;
   color: #333;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > h3 > span {
+    font-size: 2.4rem;
+  }
 }
 
 .about-us > .members > .president-wrapper {
@@ -986,15 +1102,38 @@ footer > a > p .br-sp {
   margin-bottom: 6.5rem;
 }
 
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper {
+    display: block;
+    width: 80rem;
+  }
+}
+
 .about-us > .members > .president-wrapper > .president-box {
   width: 53rem;
-  margin-right: 4.5rem;
+  margin-right: 6rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-box {
+    width: 50rem;
+    margin-right: 0;
+    margin-left: 6.5rem;
+  }
 }
 
 .about-us > .members > .president-wrapper > .president-box > p:first-of-type {
   width: 53rem;
   height: 53rem;
   margin-bottom: 0.6rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-box > p:first-of-type {
+    width: 50rem;
+    height: 50rem;
+    margin-bottom: 2.6rem;
+  }
 }
 
 .about-us > .members > .president-wrapper > .president-box > p:first-of-type > img {
@@ -1007,41 +1146,75 @@ footer > a > p .br-sp {
   color: #333;
 }
 
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-box > p:nth-of-type(2) {
+    margin-bottom: 2rem;
+  }
+}
+
 .about-us > .members > .president-wrapper > .president-box > p:nth-of-type(2) > span {
   font-size: 3.6rem;
 }
 
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-box > p:nth-of-type(2) > span {
+    font-size: 3.2rem;
+  }
+}
+
 .about-us > .members > .president-wrapper > .president-txt {
   border: 1px solid #333;
-  width: 110.5rem;
+  width: 109rem;
   height: 53rem;
   padding: 3.9rem 0 4rem 2.5rem;
   background-color: #fff;
   position: relative;
 }
 
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-txt {
+    border: 0;
+    padding: 0 2.7rem;
+    width: 80rem;
+    height: auto;
+    box-sizing: border-box;
+  }
+}
+
 .about-us > .members > .president-wrapper > .president-txt::before {
   display: block;
   content: "";
-  width: 110.5rem;
+  width: 109rem;
   height: 26.5rem;
   background: url(/step/img/mizutama.gif) repeat;
   position: absolute;
   top: 0;
-  right: 2.25rem;
+  right: 3rem;
   z-index: -1;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-txt::before {
+    display: none;
+  }
 }
 
 .about-us > .members > .president-wrapper > .president-txt::after {
   display: block;
   content: "";
-  width: 110.5rem;
+  width: 109rem;
   height: 26.5rem;
   background: url(/step/img/mizutama.gif) repeat;
   position: absolute;
   bottom: 0;
-  left: 2.25rem;
+  left: 3rem;
   z-index: -1;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-txt::after {
+    display: none;
+  }
 }
 
 .about-us > .members > .president-wrapper > .president-txt > p {
@@ -1051,11 +1224,27 @@ footer > a > p .br-sp {
   padding-right: 4rem;
 }
 
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-txt > p {
+    font-size: 1.6rem;
+    padding-right: 0;
+    line-height: 2.5;
+    font-weight: bold;
+  }
+}
+
 .about-us > .members > .president-wrapper > .president-txt > p:first-of-type {
   font-size: 3.6rem;
   font-weight: bold;
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-txt > p:first-of-type {
+    font-size: 3.2rem;
+    text-align: center;
+  }
 }
 
 .about-us > .members > .president-wrapper > .president-txt > p:first-of-type::after {
@@ -1069,23 +1258,71 @@ footer > a > p .br-sp {
   left: 0;
 }
 
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-txt > p:first-of-type::after {
+    width: 37rem;
+    right: 0;
+    top: 100%;
+    margin: auto;
+  }
+}
+
+.about-us > .members > .president-wrapper > .president-txt > p > .sp-br {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-txt > p > .sp-br {
+    display: block;
+  }
+}
+
 .about-us > .members > .members-wrapper {
   display: flex;
-  width: 168rem;
+  max-width: 168rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .members-wrapper {
+    display: block;
+    width: 80rem;
+    padding: 0 6.5rem;
+  }
 }
 
 .about-us > .members > .members-wrapper > .members-box {
   width: 53rem;
 }
 
+@media (max-width: 800px) {
+  .about-us > .members > .members-wrapper > .members-box {
+    width: 50rem;
+  }
+}
+
 .about-us > .members > .members-wrapper > .members-box:first-of-type, .about-us > .members > .members-wrapper > .members-box:nth-of-type(2) {
   margin-right: 4.5rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .members-wrapper > .members-box:first-of-type, .about-us > .members > .members-wrapper > .members-box:nth-of-type(2) {
+    margin-right: 0;
+    padding-bottom: 5.5rem;
+  }
 }
 
 .about-us > .members > .members-wrapper > .members-box > p:first-of-type {
   width: 53rem;
   height: 53rem;
   margin-bottom: 0.6rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .members-wrapper > .members-box > p:first-of-type {
+    width: 50rem;
+    height: 50rem;
+    margin-bottom: 2.6rem;
+  }
 }
 
 .about-us > .members > .members-wrapper > .members-box > p:first-of-type > img {
@@ -1100,6 +1337,264 @@ footer > a > p .br-sp {
 
 .about-us > .members > .members-wrapper > .members-box > p:nth-of-type(2) > span {
   font-size: 3.6rem;
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .members-wrapper > .members-box > p:nth-of-type(2) > span {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .members-wrapper > .members-box:nth-of-type(odd) {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us > .members > .members-wrapper > .members-box:nth-of-type(odd) > p:nth-of-type(2) {
+    text-align: right;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    height: 10rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 2rem;
+    z-index: 100;
+  }
+}
+
+header > h1 > a {
+  display: block;
+  width: 12rem;
+  height: 36.2rem;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(/step/img/top-pc/logo-header02.png) no-repeat center center/7.9rem 28.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  transition: 0.7s;
+}
+
+@media (max-width: 800px) {
+  header > h1 > a {
+    width: 28rem;
+    height: 10rem;
+    background: url(/step/img/top-sp/logo-header.png) no-repeat center center/21.5rem 6rem;
+  }
+}
+
+header > h1.slide > a {
+  background: url(/step/img/menu-pc/logo.png) no-repeat center center/7.9rem 28.2rem;
+}
+
+@media (max-width: 800px) {
+  header > h1.slide > a {
+    background: url(/step/img/menu-sp/logo.png) no-repeat center center/21.5rem 6rem;
+  }
+}
+
+header > #g-nav-btn {
+  width: 4.5rem;
+  height: 12.6rem;
+  position: fixed;
+  top: 4rem;
+  right: 3.75rem;
+  z-index: 11;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  header > #g-nav-btn {
+    width: 11.6rem;
+    height: 4.5rem;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+header > #g-nav-btn > .hamburger {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  header > #g-nav-btn > .hamburger {
+    position: absolute;
+    right: 0;
+  }
+}
+
+header > #g-nav-btn > .hamburger > span {
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 1.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header > #g-nav-btn > .hamburger > span::after {
+  display: block;
+  content: "";
+  width: 2.5rem;
+  height: 0.1rem;
+  background-color: #333;
+  position: absolute;
+  top: 3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+header > #g-nav-btn > p {
+  width: 7.1rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
+  color: #333;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  bottom: -5.6rem;
+  left: -1.3rem;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+@media (max-width: 800px) {
+  header > #g-nav-btn > p {
+    transform: rotate(0);
+    right: 4rem;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+header > #g-nav-btn.slide > .hamburger > span {
+  background-color: #fff;
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+header > #g-nav-btn.slide > .hamburger > span::after {
+  background-color: #fff;
+  top: 0;
+  transform: rotate(-90deg);
+}
+
+header > #g-nav-btn.slide > p {
+  color: #fff;
+}
+
+header > #g-nav {
+  width: 100%;
+  height: 100vh;
+  background-color: #44768c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(100%, 0);
+  z-index: 10;
+  transition: 0.5s;
+}
+
+header > #g-nav > ul {
+  width: 40rem;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  header > #g-nav > ul {
+    width: 30rem;
+  }
+}
+
+header > #g-nav > ul > li {
+  height: 20%;
+}
+
+header > #g-nav > ul > li > a {
+  display: block;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  height: 6.5rem;
+}
+
+header > #g-nav > ul > li > a > span {
+  display: inline-block;
+  height: 6.5rem;
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header > #g-nav > ul > li > a > span::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-110%);
+  transition: 0.2s;
+}
+
+header > #g-nav > ul > li > a > span:hover::after {
+  transform: translateX(0);
+}
+
+header > #g-nav.slide {
+  transform: translate(0, 0);
+}
+
+header > .contact-btn {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: fixed;
+  top: 84.7rem;
+  right: 3.6rem;
+}
+
+@media (max-width: 800px) {
+  header > .contact-btn {
+    top: 2rem;
+    right: 15rem;
+  }
+}
+
+header > .contact-btn > a {
+  display: block;
+}
+
+header > .contact-btn > a > img {
+  width: 100%;
 }
 
 .contact-page {

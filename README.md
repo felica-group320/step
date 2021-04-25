@@ -63,7 +63,7 @@ item
 #14-all  
 #15-umezawa-AboutUsPage-nav,members  
 #16-inoue-ContactPage-responsive  
-#17  
+#17-umezawa-AboutUsPage-Responsive
 #18-inoue-footer02  
 #19-inoue-ContactPage-confirm.php  
 #20-inoue-TopPage-works  
