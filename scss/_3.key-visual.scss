@@ -1,0 +1,34 @@
+
+.key-visual{
+  padding: 4rem 12rem;
+  position: relative;
+  margin-bottom: 9rem;
+  .key-visual-img-box{
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .key-visual-txt-box{
+    height: 50rem;
+    width: 20rem;
+    background: #fff;
+    position: absolute;
+    top: 22rem;
+    right: 12rem;
+    p{
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.5em;
+      writing-mode: vertical-rl;
+      position: absolute;
+      line-height: 2.1;
+      top: 9%;
+      left: 50%;
+      transform: translateY(1%) translateX(-50%);
+      span{
+        margin-top: 14.5rem;
+      }
+    }
+  }
+}
