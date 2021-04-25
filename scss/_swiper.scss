@@ -15,11 +15,11 @@
 
 .swiper-container {
   width: 100%;
-  height: 56.25vh;
+  height: 95vh;
   transition:opacity .6s ease;
   display: none;
   @include tab{
-    display: block;
+     display: block;
   }
   &.swiper-container-coverflow{
     padding-top:0;
@@ -52,19 +52,21 @@
   }
   .content{
     position:absolute;
-    top:40%;
-    left:0;
-    width:50%;
-    padding-left:5%;
-    color:#fff;
+    // top:80%;
+    left:2%;
+    bottom: 2%;
+    width:auto;
+    padding: 1rem 2rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
     .title{
-      font-size:2.6em;
+      font-size:2.5rem;
       font-weight:bold;
-      margin-bottom:30px;
+      margin-bottom:0.6rem;
     }
     .caption{
       display:block;
-      font-size:13px;
+      font-size:1.5rem;
       line-height:1.4;
     }
   }
@@ -117,18 +119,6 @@
 }
 
 // Mediaqueries
-@media(max-width:1180px){
-  .swiper-slide{
-    .content{
-      .title{
-        font-size:25px;
-      }
-      .caption{
-        font-size:12px;
-      }
-    }
-  }
-}
 @media(max-width:800px){
   .swiper-container {
     height: 40vh;
