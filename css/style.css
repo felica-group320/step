@@ -1009,6 +1009,77 @@ header > .contact-btn > a > img {
   transition: 0.4s;
 }
 
+.company {
+  display: flex;
+  margin-bottom: 15rem;
+  position: relative;
+}
+
+.company::after {
+  display: block;
+  content: "";
+  width: 142.9rem;
+  height: 86.1rem;
+  background: url(/step/img/mizutama.gif) repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.company > .company-image {
+  width: 81rem;
+  height: 80rem;
+  margin-right: 6rem;
+}
+
+.company > .company-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.company > .company-box {
+  width: 81rem;
+  height: 80rem;
+  padding: 12.7rem 1.5rem 0 9.5rem;
+  background-color: #fff;
+}
+
+.company > .company-box > h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #333;
+  line-height: 2;
+  padding-bottom: 2.2rem;
+  position: relative;
+  margin-bottom: 2.6rem;
+}
+
+.company > .company-box > h2::after {
+  display: block;
+  content: "";
+  width: 53rem;
+  height: 0.4rem;
+  background-color: #f3e42b;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.company > .company-box > .company-txt {
+  font-size: 2.4rem;
+  color: #333;
+  text-align: right;
+  line-height: 2;
+}
+
+.company > .company-box > .company-txt > span {
+  font-weight: bold;
+}
+
 .scroll {
   display: none;
   position: fixed;
