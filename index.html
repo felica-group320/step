@@ -7,6 +7,7 @@
   <meta name="keyword" content="3〜5ワードくらいのキーワードを入れる">
   <title>株式会社STEP</title>
   <link rel="stylesheet" href="/step/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" href="/step/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="192x192" href="/step/img/touch_icon.png">
@@ -39,13 +40,127 @@
     <div class="company"></div>
 
     <!-- 井上部分 -->
-    <div class="works"></div>
+    <div class="works">
+      <h2>WORKS<br><span>制作実績</span></h2>
+      <p>
+        見た目だけでなく、サイトを訪れる顧客を想像し、<br>より分かりやすく、より扱いやすいようにデザインします。<br>皆様の顧客が特別な体験出来ること考えて制作しております。
+      </p>
+      <div class="works-wrapper">
+        <a href="#">
+          <div class="works-box">
+            <img src="/step/img/top-pc/works.jpg" alt="">
+          </div>
+        </a>
+        <a href="#">
+          <div class="works-box">
+            <img src="/step/img/top-pc/works.jpg" alt="">
+          </div>
+        </a>
+        <a href="#">
+          <div class="works-box">
+            <img src="/step/img/top-pc/works.jpg" alt="">
+          </div>
+        </a>
+        <a href="#">
+          <div class="works-box">
+            <img src="/step/img/top-pc/works.jpg" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+    <section class="swiper-container loading">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(https://placehold.jp/ffa8f8/ffffff/1280x720.jpg)">
+          <img src="https://placehold.jp/a8ffc5/ffffff/1280x720.jpg" class="entity-img" />
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Shaun Matthews</p>
+            <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(https://placehold.jp/ffa8a8/ffffff/1280x720.jpg)">
+          <img src="https://placehold.jp/a8ffc5/ffffff/1280x720.jpg" class="entity-img" />
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Billie	Pierce</p>
+            <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(https://placehold.jp/a8c4ff/ffffff/1280x720.jpg)">
+          <img src="https://placehold.jp/a8ffc5/ffffff/1280x720.jpg" class="entity-img" />
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Trevor	Copeland</p>
+            <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(https://placehold.jp/a8ffc5/ffffff/1280x720.jpg)">
+          <img src="https://placehold.jp/a8ffc5/ffffff/1280x720.jpg" class="entity-img" />
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Bernadette	Newman</p>
+            <span class="caption" data-swiper-parallax="-20%">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </section>
 
     <!-- 梅澤部分 -->
-    <div class="about-us"></div>
+    <!-- <div class="about-us"></div> -->
 
     <!-- 井上部分 -->
-    <div class="contact"></div>
+    <div class="service">
+      <h2>SERVICE<br><span>サービス</span></h2>
+      <p>
+        「サイト制作」「WEBコンサルティング」「運用サポート」<br>３つの軸でビジネスをサポート。
+      </p>
+      <section class="service-wrapper">
+        <div class="service-box">
+          <div class="img-item">
+            <img src="/step/img/top-pc/unyou01.jpg" alt="">
+          </div>
+          <div class="service-txt-wrapper">
+            <h3>WEBサイト制作</h3>
+            <p>
+              WEBサイト制作を承ります。<br>SEOに最適化されたWEBサイトで、<br>たくさんの方の目に届くサイトを<br class="service-sp-br">目指します。
+            </p>
+          </div>
+        </div>
+        
+        <div class="service-box">
+          <div class="img-item">
+            <img src="/step/img/top-pc/marketing.jpg" alt="">
+          </div>
+          <div class="service-txt-wrapper">
+            <h3><span class="pc-txt">WEB</span>コンサルティング</h3>
+            <p>
+              インターネットの力を使って、<br>ビジネスをより良くする為に出来る事を、<br>一緒に探して行きます。
+            </p>
+            <!-- <p>
+              インターネットの力を使って、<br>ビジネスをより良くする為に<br class="service-sp-br">出来る事を、<br class="service-pc-br">一緒に探して行きます。
+            </p> -->
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="img-item">
+            <img src="/step/img/top-pc/unyou02.jpg" alt="">
+          </div>
+          <div class="service-txt-wrapper">
+            <h3>運用サポート</h3>
+            <p>
+              あなたのサイトでどのようなお客様が、<br>どのように行動をしたかを分析し、<br>達成したい目標に向けて最適化します。
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="form-btn">
+        <a href="#">お見積もりはこちら</a>
+        <div class="button-shadow"></div>
+      </div>
+    </div>
   </main>
 
   <!-- 井上部分 -->
@@ -76,6 +191,7 @@
 <!--   5. --><script src=""></script>
 <!--   6. --><script src=""></script>
 <!--   7. --><script src=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
 
 </body>
 </html>

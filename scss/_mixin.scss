@@ -11,12 +11,14 @@ html {
   @include tab{
     font-size: calc(100vw / 80);
   }
-  // background-image: url(/step/img/contact-sp/contact_tab&sp.png);
+  // background-image: url(/step/img/top-pc/top_pc.png);
+    // background-image: url(/step/img/top-sp/top_tab&sp.png);
 }
 
 body{
   font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
   // opacity: 0.3;
+  overflow-x: hidden;
 }
 
 $base-color:#fff;
