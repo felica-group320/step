@@ -3,10 +3,25 @@
   padding: 4rem 12rem;
   position: relative;
   margin-bottom: 9rem;
+  @include tab{
+    padding: 0 0 0 6.5rem;
+    margin-top: 10rem;
+  }
   .key-visual-img-box{
-    img{
+    .img-pc{
       height: 100%;
       width: 100%;
+      @include tab{
+        display: none;
+      }
+    }
+    .img-sp{
+      display: none;
+      @include tab{
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
   .key-visual-txt-box{
@@ -16,7 +31,14 @@
     position: absolute;
     top: 22rem;
     right: 12rem;
+    @include tab{
+      height: 15rem;
+      width: 36.8rem;
+      top: 99rem;
+      right: 0;
+    }
     p{
+      color: $txt-color;
       font-size: 2rem;
       font-weight: bold;
       letter-spacing: 0.5em;
@@ -26,8 +48,21 @@
       top: 9%;
       left: 50%;
       transform: translateY(1%) translateX(-50%);
+      @include tab{
+        writing-mode: horizontal-tb;
+        font-size: 2.4rem;
+      letter-spacing: 0;
+        line-height: calc(46 / 24);
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-46%) translateX(-3%);
+      }
       span{
         margin-top: 14.5rem;
+        @include tab{
+          margin-left: 12rem;
+        }
       }
     }
   }

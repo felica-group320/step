@@ -519,9 +519,34 @@ header > .contact-btn > a > img {
   margin-bottom: 9rem;
 }
 
-.key-visual .key-visual-img-box img {
+@media (max-width: 800px) {
+  .key-visual {
+    padding: 0 0 0 6.5rem;
+    margin-top: 10rem;
+  }
+}
+
+.key-visual .key-visual-img-box .img-pc {
   height: 100%;
   width: 100%;
+}
+
+@media (max-width: 800px) {
+  .key-visual .key-visual-img-box .img-pc {
+    display: none;
+  }
+}
+
+.key-visual .key-visual-img-box .img-sp {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .key-visual .key-visual-img-box .img-sp {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .key-visual .key-visual-txt-box {
@@ -533,7 +558,17 @@ header > .contact-btn > a > img {
   right: 12rem;
 }
 
+@media (max-width: 800px) {
+  .key-visual .key-visual-txt-box {
+    height: 15rem;
+    width: 36.8rem;
+    top: 99rem;
+    right: 0;
+  }
+}
+
 .key-visual .key-visual-txt-box p {
+  color: #333;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.5em;
@@ -545,8 +580,27 @@ header > .contact-btn > a > img {
   transform: translateY(1%) translateX(-50%);
 }
 
+@media (max-width: 800px) {
+  .key-visual .key-visual-txt-box p {
+    writing-mode: horizontal-tb;
+    font-size: 2.4rem;
+    letter-spacing: 0;
+    line-height: calc(46 / 24);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-46%) translateX(-3%);
+  }
+}
+
 .key-visual .key-visual-txt-box p span {
   margin-top: 14.5rem;
+}
+
+@media (max-width: 800px) {
+  .key-visual .key-visual-txt-box p span {
+    margin-left: 12rem;
+  }
 }
 
 .top-page .works {
