@@ -44,6 +44,10 @@
         width: 52rem;
         height: 70.3rem;
         border: 0.1rem solid #707070;
+        &:hover>.img-item>img{
+          transform: scale(1.03);
+          transition: 0.5s;
+        }
         @include tab{
           display: flex;
           width: 75.8rem;
@@ -54,9 +58,10 @@
           }
         }
         .img-item{
-          max-width: 52rem;
-          max-height: 50.1rem;
+          max-width: 51.8rem;
+          max-height: 50rem;
           border-bottom: 0.1rem solid #707070;
+          overflow: hidden;
           @include tab{
             max-width: 36.8rem;
             max-height: 36.8rem;
