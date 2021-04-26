@@ -77,7 +77,7 @@ item
 #28-inoue-TopPage-KeyVisual02  
 #29-inoue-TopPage-works04  
 #30  
-#31  
+#31-umezawa-TopPage-header
 #32  
 #33  
 #34  
