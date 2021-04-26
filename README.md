@@ -63,7 +63,7 @@ item
 #14-all  
 #15-umezawa-AboutUsPage-nav,members  
 #16-inoue-ContactPage-responsive  
-#17-umezawa-AboutUsPage-Responsive
+#17-umezawa-AboutUsPage-Responsive  
 #18-inoue-footer02  
 #19-inoue-ContactPage-confirm.php  
 #20-inoue-TopPage-works  
@@ -73,13 +73,13 @@ item
 #24-inoue-TopPage-works03  
 #25-umezawa-TopPage-AboutUs  
 #26-inoue-TopPage-KeyVisual  
-#27-umezawa-TopPage-company
+#27-umezawa-TopPage-company  
 #28-inoue-TopPage-KeyVisual02  
 #29-inoue-TopPage-works04  
-#30  
-#31-umezawa-TopPage-header
+#30-inoue-picture  
+#31-umezawa-TopPage-header  
 #32-inoue-TopPage-works07  
-#33  
+#33-inoue,umezawa-all02  
 #34  
 #35  
 #36  
