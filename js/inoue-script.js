@@ -43,7 +43,7 @@ var sliderSelector = '.swiper-container',
 options = {
   init: false,
   loop: true,
-  speed:800,
+  speed:1000,
   slidesPerView: 1.4, // or 'auto'
   // spaceBetween: 10,
   centeredSlides : true,
