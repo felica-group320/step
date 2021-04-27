@@ -101,6 +101,12 @@
           }
         }
       }
+      //駒田記述
+      h4{
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 5rem;
+      }
       #g-form{
         >dl{
           &:nth-of-type(2)>dd{
@@ -384,6 +390,7 @@
             position: relative;
             z-index: 2;
             transition: 0.4s;
+            //駒田記述
             span{
               display: block;
               font-size: 1.4rem;
@@ -394,6 +401,13 @@
             }
             &:hover ~ .button-shadow{
               transform: translate(0.5rem,0.5rem);
+            }
+          }
+          //駒田記述
+          [type="button"]{
+            margin:3rem 0 0 25rem;
+            @include tab{
+              margin: 2rem 0 0 5rem;
             }
           }
           >.button-shadow{
@@ -409,6 +423,16 @@
             z-index: 1;
             transition: 0.4s;
           }
+        }
+        // 駒田記述分
+        
+        .check-item{
+          margin: 2rem 0 4rem 3rem;
+          font-size: 2.4rem;
+        }
+        .confirm-txt{
+          text-align: center;
+          margin-bottom: 1rem;
         }
       }
     }
