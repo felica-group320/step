@@ -41,52 +41,33 @@ $message=htmlspecialchars($_POST["message"], ENT_QUOTES);
         <li class="current"><p>確認</p></li>
         <li><p>完了</p></li>
       </ul>
-      <form id="g-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfAN1KE9wewrMNTJdiwZfJvjzegWsJ2RkCDLMIUYPNwr59sXg/formResponse" method="post">
+      <h4>内容確認</h4>
+      <form id="g-form" action="/step/contact/thanks.html" method="post">
         <dl>
           <dt><span>※</span>お問い合わせ項目</dt>
-          <small>この項目は記入必須です。</small>
-          <dd><p><?php echo $item; ?></p></dd>
+          <p class="check-item"><?php echo $item; ?></p>
         </dl>
-        <div class="name-container">          
+        <div class="name-container">
           <dl class="name-wrapper">
             <dt><span>※</span>お名前</dt>
-            <dd><p><?php echo $name; ?></p></dd>
+            <p class="check-item"><?php echo $name; ?> <?php echo $name02; ?> 様</p>
           </dl>
-          <div class="name-wrapper-conf">
-            <dt><span>※</span>お名前(カナ)</dt>
-            <dd><p><?php echo $name02; ?></p></dd>
-          </div>
         </div>
         <div class="mail-container">
           <dl class="mail-wrapper">
             <dt><span>※</span>メールアドレス</dt>
-            <dd><p><?php echo $email; ?></p></dd>
-          </dl>
-          <dl class="mail-wrapper-conf">
-            <dt><span>※</span>メールアドレス再入力</dt>
-            <dd><p><?php echo $email02; ?></p></dd>
+            <p class="check-item"><?php echo $email02; ?></p>
           </dl>
         </div>
         <dl>
           <dt><span>※</span>お問い合わせ内容</dt>
-          <dd><p class="textarea"><?php echo $message; ?></p></dd>
+          <p class="check-item"><?php echo $message; ?></p>
         </dl>
-
-        <!-- googleFormに送る値を設定 -->
-        <input type="hidden" name="entry.845472719" value="<?php echo $item; ?>">
-        <input type="hidden" name="entry.558785602" value="<?php echo $name; ?>">
-        <input type="hidden" name="entry.1076166231" value="<?php echo $name02; ?>">
-        <input type="hidden" name="entry.196756271" value="<?php echo $email; ?>">
-        <input type="hidden" name="entry.291888899" value="<?php echo $email02; ?>">
-        <input type="hidden" name="entry.1747969934" value="<?php echo $message; ?>">
-
-        <p class="confirm-txt">お問い合わせ内容に問題がなければ送信ボタンをクリックして下さい。</p>
-  
+        <p class="confirm-txt">よろしければ、「送信」ボタンを押してください。</p>
         <div class="form-btn">
-          <input type="submit" value="入力内容を送信">
-          <input type="button" value="入力画面に戻る" onclick="history.back();">
+          <input type="submit" value="送信">
+          <input type="button" value="←入力画面に戻る" onclick="history.back();">
         </div>
-        
       </form>
     </div>
   </article>
