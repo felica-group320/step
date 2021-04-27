@@ -90,6 +90,11 @@ $message=htmlspecialchars($_POST["message"], ENT_QUOTES);
   </article>
 </main>
 
+<div id="scroll" class="scroll">
+  <a id ="to-top" href="#">TOP</a>
+  <span id="bar1" class="bar1"></span>
+</div>
+
   <footer>
     <img src="/step/img/top-pc/logo-footer.png" alt="株式会社STEPロゴ画像">
     <p>株式会社 STEP</p>
@@ -101,7 +106,7 @@ $message=htmlspecialchars($_POST["message"], ENT_QUOTES);
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="/step/js/inoue-script.js"></script>
 
 </body>
 </html>

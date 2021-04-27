@@ -2760,6 +2760,25 @@ footer > a > p .br-sp {
   margin-bottom: 1rem;
 }
 
+.contact-page > .contact > .contact-container #g-form .thanks-txt {
+  text-align: center;
+}
+
+.contact-page > .contact > .contact-container #g-form .thanks-txt .thanks {
+  font-size: 4.8rem;
+  margin-bottom: 6rem;
+}
+
+.contact-page > .contact > .contact-container #g-form .thanks-txt .waiting {
+  font-size: 4rem;
+  margin-bottom: 6rem;
+}
+
+.contact-page > .contact > .contact-container #g-form .thanks-txt .check {
+  font-size: 2.4rem;
+  margin-bottom: 9rem;
+}
+
 [class^="swiper-button-"], .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet::before {
   transition: all .3s ease;
 }
