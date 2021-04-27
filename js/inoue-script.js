@@ -6,6 +6,34 @@ $(function(){
     $('#agree-box').toggleClass('active');
   });
 
+  $('#komada').on('click',function(){
+    $('#modal-window-komada').addClass('mw-action');
+  });
+  $('#modal-window-komada').on('click',function(){
+    $(this).removeClass('mw-action');
+  });
+
+  $('#inoue').on('click',function(){
+    $('#modal-window-inoue').addClass('mw-action');
+  });
+  $('#modal-window-inoue').on('click',function(){
+    $(this).removeClass('mw-action');
+  });
+
+  $('#umezawa').on('click',function(){
+    $('#modal-window-umezawa').addClass('mw-action');
+  });
+  $('#modal-window-umezawa').on('click',function(){
+    $(this).removeClass('mw-action');
+  });
+
+  $('#kurokawa').on('click',function(){
+    $('#modal-window-kurokawa').addClass('mw-action');
+  });
+  $('#modal-window-kurokawa').on('click',function(){
+    $(this).removeClass('mw-action');
+  });
+
   //スムーススクロール
   $('#to-top').on('click',function(){
     $('html,body').animate({scrollTop:0},1000);
