@@ -18,9 +18,9 @@ $('#g-nav a').on('click',function(){
 $(window).scroll(function() {
     var a = ($(this).scrollTop());
     if(a > 750){
-        $('#logo-wrapper').fadeIn();
+        $('#logo-wrapper').addClass('on');
     }else{
-        $('#logo-wrapper').fadeOut();
+        $('#logo-wrapper').removeClass('on');
     }
 });
 
