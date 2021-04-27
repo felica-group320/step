@@ -191,6 +191,7 @@ header{
         position: fixed;
         top: 77vh;
         right: 3.6rem;
+        z-index: 5;
         @include tab{
             top: 2rem;
             right: 15rem;
@@ -207,6 +208,9 @@ header{
 
 header.top-header{
     position: relative;
+    @include tab{
+        position: fixed;
+    }
     >h1{
         width: 38.5rem;
         height: 50rem;
@@ -216,6 +220,12 @@ header.top-header{
         left: 0;
         z-index: 10;
         padding: 13.5rem 2.25rem 0;
+        @include tab{
+            padding: 0;
+            height: 10rem;
+            background-color: $base-color;
+            position: static;
+        }
         >a{
             width: 34rem;
             height: 10.3rem;
@@ -228,6 +238,10 @@ header.top-header{
             font-weight: bold;
             position: static;
             text-align: center;
+            @include tab{
+                font-size: 2.8rem;
+                /* background-color: $base-color; */
+            }
             &::before{
                 display: block;
                 content: "";
@@ -236,16 +250,48 @@ header.top-header{
                 background: url(/step/img/top-pc/logo-header.png)no-repeat center center/32.85rem 9.27rem;
                 margin-bottom: 3rem;
                 padding-bottom: 3rem;
+                @include tab{
+                    width: 28rem;
+                    height: 10rem;
+                    background: url(/step/img/top-pc/logo-header.png)no-repeat center center/21.5rem 6rem;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
             }
             >span{
-                font-size: 2.4rem;
+                @include tab{
+                    display: none;
+                }
+                &:nth-of-type(2){
+                    font-size: 2.4rem;
+                }
             }
         }
     }
 }
 
-#logo-wrapper{
+#sp-logo-txt{
     display: none;
+    @include tab{
+        width: 34rem;
+        height: 18.5rem;
+        padding: 11.5rem 0 0 6.5rem;
+        font-size: 2.8rem;
+        color: $txt-color;
+        font-weight: bold;
+        background-color: $base-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        display: block;
+    }
+}
+
+#logo-wrapper{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
     >a{
         display: block;
         width: 12rem;
@@ -263,11 +309,18 @@ header.top-header{
             height: 100%;
         }
     }
-    &.slide{
-        >a{
-            display: none;
-            &:nth-of-type(2){
-                display: block;
+    &.on{
+        visibility: visible;
+        opacity: 1;
+        @include tab{
+            visibility: hidden;
+        }
+        &.slide{
+            >a{
+                display: none;
+                &:nth-of-type(2){
+                    display: block;
+                }
             }
         }
     }

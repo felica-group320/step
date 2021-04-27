@@ -81,7 +81,7 @@ item
 #32-inoue-TopPage-works07  
 #33-inoue,umezawa-all02  
 #34-inoue-AboutUsPage-ModalWindow  
-#35  
+#35-umezawa-TopPage-Responsive  
 #36-komada-form-check  
 #37-komada-form-thanks  
 #38  
