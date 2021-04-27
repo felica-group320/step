@@ -13,8 +13,8 @@
 (#1　井上　トップページ　ヘッダー　ハンバーガーメニューを実装)  
 8.プッシュ  
 9.プルリクエスト  
-10.マージ  
-11.issueをclosedにする  
+10.ディレクターがマージ  
+11.ディレクターがissueをclosedにする  
 12.ディレクターにコーディング部分のビジュアルを確認してもらう。  
   
 【scssのファイル名】  
@@ -80,10 +80,10 @@ item
 #31-umezawa-TopPage-header  
 #32-inoue-TopPage-works07  
 #33-inoue,umezawa-all02  
-#34  
+#34-inoue-AboutUsPage-ModalWindow  
 #35-umezawa-TopPage-Responsive  
-#36  
-#37  
+#36-komada-form-check  
+#37-komada-form-thanks  
 #38  
 #39  
 #40  

@@ -1,27 +1,11 @@
-<!-- データの取得を行いたいのでphpを使っている。 -->
-
-<?php
-//$_POST["name"]の値が空だったらLocationで指定しているファイルに強制移動（リダイレクト）させる
-if(!(isset($_POST['name']))){
-  header('Location:index.html');
-  exit;
-}
-$name=htmlspecialchars($_POST["name"], ENT_QUOTES);
-$name02=htmlspecialchars($_POST["name02"], ENT_QUOTES);
-$email=htmlspecialchars($_POST["email"], ENT_QUOTES);
-$email02=htmlspecialchars($_POST["email02"], ENT_QUOTES);
-$item=$_POST["item"];
-$message=htmlspecialchars($_POST["message"], ENT_QUOTES);
-?>
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="株式会社STEP(ステップ)は、東京都にあるweb制作会社です。webサイト制作、コンサルティング、web運営サポートなど、インターネットの力を使ってあなたのビジネスをサポート致します。確認画面。">
+  <meta name="description" content="株式会社STEP(ステップ)は、東京都にあるweb制作会社です。webサイト制作、コンサルティング、web運営サポートなど、インターネットの力を使ってあなたのビジネスをサポート致します。完了画面。">
   <meta name="keyword" content="サイト制作会社,webサイト制作,コンサルティング,web運用サポート,料金">
-  <title>株式会社STEP|確認ページ</title>
+  <title>株式会社STEP|完了ページ</title>
   <link rel="stylesheet" href="/step/css/style.css">
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" href="/step/favicon.svg" type="image/svg+xml">
@@ -55,35 +39,18 @@ $message=htmlspecialchars($_POST["message"], ENT_QUOTES);
     <div class="contact-container">
       <ul class="step">
         <li><p>入力</p></li>
-        <li class="current"><p>確認</p></li>
-        <li><p>完了</p></li>
+        <li><p>確認</p></li>
+        <li class="current"><p>完了</p></li>
       </ul>
-      <h4>内容確認</h4>
-      <form id="g-form" action="/step/contact/thanks.html" method="post">
-        <dl>
-          <dt><span>※</span>お問い合わせ項目</dt>
-          <p class="check-item"><?php echo $item; ?></p>
-        </dl>
-        <div class="name-container">
-          <dl class="name-wrapper">
-            <dt><span>※</span>お名前</dt>
-            <p class="check-item"><?php echo $name; ?> <?php echo $name02; ?> 様</p>
-          </dl>
+      <h4>送信完了</h4>
+      <form id="g-form" action="/step/contact/" method="post">
+        <div class="thanks-txt">
+          <p class="thanks">お問い合わせありがとうございました。</p>
+          <p class="waiting">2～3営業日以内に、返信させていただきます。</p>
+          <p class="check">※自動返信メールが、<br>届いているかご確認ください。</p>
         </div>
-        <div class="mail-container">
-          <dl class="mail-wrapper">
-            <dt><span>※</span>メールアドレス</dt>
-            <p class="check-item"><?php echo $email02; ?></p>
-          </dl>
-        </div>
-        <dl>
-          <dt><span>※</span>お問い合わせ内容</dt>
-          <p class="check-item"><?php echo $message; ?></p>
-        </dl>
-        <p class="confirm-txt">よろしければ、「送信」ボタンを押してください。</p>
         <div class="form-btn">
-          <input type="submit" value="送信">
-          <input type="button" value="←入力画面に戻る" onclick="history.back();">
+          <input type="submit" value="料金表＆お問い合わせに戻る">
         </div>
       </form>
     </div>
@@ -106,7 +73,10 @@ $message=htmlspecialchars($_POST["message"], ENT_QUOTES);
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <script src="/step/js/umezawa-script.js"></script>
   <script src="/step/js/inoue-script.js"></script>
+  <script src="/step/js/script.js"></script>
 
 </body>
 </html>
