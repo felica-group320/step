@@ -485,6 +485,7 @@ header > .contact-btn {
   position: fixed;
   top: 77vh;
   right: 3.6rem;
+  z-index: 5;
 }
 
 @media (max-width: 800px) {
@@ -506,6 +507,12 @@ header.top-header {
   position: relative;
 }
 
+@media (max-width: 800px) {
+  header.top-header {
+    position: fixed;
+  }
+}
+
 header.top-header > h1 {
   width: 38.5rem;
   height: 50rem;
@@ -515,6 +522,15 @@ header.top-header > h1 {
   left: 0;
   z-index: 10;
   padding: 13.5rem 2.25rem 0;
+}
+
+@media (max-width: 800px) {
+  header.top-header > h1 {
+    padding: 0;
+    height: 10rem;
+    background-color: #fff;
+    position: static;
+  }
 }
 
 header.top-header > h1 > a {
@@ -531,6 +547,13 @@ header.top-header > h1 > a {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  header.top-header > h1 > a {
+    font-size: 2.8rem;
+    /* background-color: $base-color; */
+  }
+}
+
 header.top-header > h1 > a::before {
   display: block;
   content: "";
@@ -541,12 +564,51 @@ header.top-header > h1 > a::before {
   padding-bottom: 3rem;
 }
 
-header.top-header > h1 > a > span {
+@media (max-width: 800px) {
+  header.top-header > h1 > a::before {
+    width: 28rem;
+    height: 10rem;
+    background: url(/step/img/top-pc/logo-header.png) no-repeat center center/21.5rem 6rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  header.top-header > h1 > a > span {
+    display: none;
+  }
+}
+
+header.top-header > h1 > a > span:nth-of-type(2) {
   font-size: 2.4rem;
 }
 
-#logo-wrapper {
+#sp-logo-txt {
   display: none;
+}
+
+@media (max-width: 800px) {
+  #sp-logo-txt {
+    width: 34rem;
+    height: 18.5rem;
+    padding: 11.5rem 0 0 6.5rem;
+    font-size: 2.8rem;
+    color: #333;
+    font-weight: bold;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: block;
+  }
+}
+
+#logo-wrapper {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 #logo-wrapper > a {
@@ -569,11 +631,22 @@ header.top-header > h1 > a > span {
   height: 100%;
 }
 
-#logo-wrapper.slide > a {
+#logo-wrapper.on {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  #logo-wrapper.on {
+    visibility: hidden;
+  }
+}
+
+#logo-wrapper.on.slide > a {
   display: none;
 }
 
-#logo-wrapper.slide > a:nth-of-type(2) {
+#logo-wrapper.on.slide > a:nth-of-type(2) {
   display: block;
 }
 
@@ -1019,10 +1092,29 @@ header.top-header > h1 > a > span {
   margin-top: 27rem;
 }
 
+@media (max-width: 800px) {
+  .top-about-us {
+    display: block;
+    padding: 0 2rem;
+    width: 80rem;
+    position: relative;
+    margin-top: 9rem;
+    margin-bottom: 85rem;
+  }
+}
+
 .top-about-us > .about-us-image {
   width: 82.5rem;
   height: 82.5rem;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .top-about-us > .about-us-image {
+    width: 69.5rem;
+    height: 60rem;
+    margin: 0 0 0 auto;
+  }
 }
 
 .top-about-us > .about-us-image::after {
@@ -1040,6 +1132,12 @@ header.top-header > h1 > a > span {
   z-index: -2;
 }
 
+@media (max-width: 800px) {
+  .top-about-us > .about-us-image::after {
+    display: none;
+  }
+}
+
 .top-about-us > .about-us-image > img {
   width: 100%;
   height: 100%;
@@ -1049,6 +1147,17 @@ header.top-header > h1 > a > span {
   padding: 0 0 3rem 4.5rem;
 }
 
+@media (max-width: 800px) {
+  .top-about-us > .about-us-box {
+    background-color: #fff;
+    width: 71.5rem;
+    padding: 0 2rem 3rem 4.5rem;
+    position: absolute;
+    top: 50rem;
+    left: 0;
+  }
+}
+
 .top-about-us > .about-us-box > h2 {
   font-size: 10.4rem;
   color: #44768c;
@@ -1056,6 +1165,13 @@ header.top-header > h1 > a > span {
   padding: 1rem 14rem 3.5rem 0;
   position: relative;
   margin-bottom: 2.4rem;
+}
+
+@media (max-width: 800px) {
+  .top-about-us > .about-us-box > h2 {
+    font-size: 10rem;
+    padding: 4rem 0;
+  }
 }
 
 .top-about-us > .about-us-box > h2::after {
@@ -1069,11 +1185,23 @@ header.top-header > h1 > a > span {
   left: 15.5rem;
 }
 
+@media (max-width: 800px) {
+  .top-about-us > .about-us-box > h2::after {
+    width: 49rem;
+  }
+}
+
 .top-about-us > .about-us-box > h2 > span {
   font-size: 5.6rem;
   color: #333;
   font-weight: bold;
   padding-left: 15.5rem;
+}
+
+@media (max-width: 800px) {
+  .top-about-us > .about-us-box > h2 > span {
+    font-size: 5rem;
+  }
 }
 
 .top-about-us > .about-us-box > .about-us-txt > p {
@@ -1088,8 +1216,20 @@ header.top-header > h1 > a > span {
   padding-bottom: 7rem;
 }
 
+@media (max-width: 800px) {
+  .top-about-us > .about-us-box > .about-us-txt > p:first-of-type {
+    padding-bottom: 0;
+  }
+}
+
 .top-about-us > .about-us-box > .about-us-txt > p:nth-of-type(2) {
   margin-bottom: 6rem;
+}
+
+@media (max-width: 800px) {
+  .top-about-us > .about-us-box > .about-us-txt > p:nth-of-type(2) {
+    margin-bottom: 4rem;
+  }
 }
 
 .top-about-us > .about-us-box > .about-us-btn {
@@ -1097,6 +1237,14 @@ header.top-header > h1 > a > span {
   height: 8rem;
   position: relative;
   margin: 0 0 0 auto;
+}
+
+@media (max-width: 800px) {
+  .top-about-us > .about-us-box > .about-us-btn {
+    margin: 0 auto 0 23.5rem;
+    width: 24rem;
+    height: 6rem;
+  }
 }
 
 .top-about-us > .about-us-box > .about-us-btn > a {
@@ -1110,6 +1258,14 @@ header.top-header > h1 > a > span {
   text-align: center;
   line-height: 8rem;
   transition: 0.4s;
+}
+
+@media (max-width: 800px) {
+  .top-about-us > .about-us-box > .about-us-btn > a {
+    width: 24rem;
+    height: 6rem;
+    line-height: 6rem;
+  }
 }
 
 .top-about-us > .about-us-box > .about-us-btn > a:hover {
@@ -1134,11 +1290,28 @@ header.top-header > h1 > a > span {
   transition: 0.4s;
 }
 
+@media (max-width: 800px) {
+  .top-about-us > .about-us-box > .about-us-btn > .button-shadow {
+    width: 24rem;
+    height: 6rem;
+  }
+}
+
 .company {
   display: flex;
   margin-bottom: 11rem;
   padding-top: 8rem;
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .company {
+    display: block;
+    /* background-color: lightgreen; */
+    padding-top: 6rem;
+    padding-left: 2rem;
+    margin-bottom: 65rem;
+  }
 }
 
 .company::after {
@@ -1156,10 +1329,23 @@ header.top-header > h1 > a > span {
   z-index: -1;
 }
 
+@media (max-width: 800px) {
+  .company::after {
+    display: none;
+  }
+}
+
 .company > .company-image {
   width: 81rem;
   height: 80rem;
   margin-right: 6rem;
+}
+
+@media (max-width: 800px) {
+  .company > .company-image {
+    width: 69.6rem;
+    height: 60rem;
+  }
 }
 
 .company > .company-image > img {
@@ -1172,6 +1358,18 @@ header.top-header > h1 > a > span {
   height: 80rem;
   padding: 12.7rem 1.5rem 0 9.5rem;
   background-color: #fff;
+}
+
+@media (max-width: 800px) {
+  .company > .company-box {
+    width: 65.1rem;
+    height: auto;
+    padding: 2.4rem 2.8rem 0 4.5rem;
+    /* background-color: lightsalmon; */
+    position: absolute;
+    top: 60rem;
+    right: 0;
+  }
 }
 
 .company > .company-box > h2 {
