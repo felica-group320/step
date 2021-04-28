@@ -86,4 +86,4 @@ item
 #37-komada-form-thanks  
 #38  
 #39  
-#40  
+#40-umezawa-Top,AboutUsPage-Parallax  
