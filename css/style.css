@@ -1024,14 +1024,11 @@ header.top-header > h1 > a > span:nth-of-type(2) {
 .top-about-us > .top-about-us-wrapper > .about-us-image {
   width: 82.5rem;
   height: 82.5rem;
-  position: relative;
-  z-index: -1;
 }
 @media (max-width: 800px) {
   .top-about-us > .top-about-us-wrapper > .about-us-image {
     width: 69.5rem;
     height: 60rem;
-    margin: 0 0 0 auto;
   }
 }
 .top-about-us > .top-about-us-wrapper > .about-us-image > img {
