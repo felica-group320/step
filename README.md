@@ -85,5 +85,10 @@ item
 #36-komada-form-check  
 #37-komada-form-thanks  
 #38-komada-modal-rewrite  
-#39  
+#39-komada-alt-write  
 #40  
+#41  
+#42  
+#43  
+#44  
+#45  
