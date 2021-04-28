@@ -84,6 +84,6 @@ item
 #35-umezawa-TopPage-Responsive  
 #36-komada-form-check  
 #37-komada-form-thanks  
-#38  
+#38-komada-modal-rewrite  
 #39  
 #40  
