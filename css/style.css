@@ -1620,6 +1620,11 @@ footer > a > p .br-sp {
   transform: scale(1.05);
   filter: grayscale(0);
 }
+@media (max-width: 800px) {
+  .about-us > .members > .president-wrapper > .president-box > p:first-of-type > img {
+    filter: grayscale(0);
+  }
+}
 .about-us > .members > .president-wrapper > .president-box > p:nth-of-type(2) {
   font-size: 2.4rem;
   color: #333;
@@ -1788,7 +1793,7 @@ footer > a > p .br-sp {
 }
 .about-us > .members > .members-wrapper > .members-box > p:first-of-type > img:hover {
   transform: scale(1.05);
-  filter: grayscale(0%);
+  filter: grayscale(0);
 }
 .about-us > .members > .members-wrapper > .members-box > p:nth-of-type(2) {
   font-size: 2.4rem;
