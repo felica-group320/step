@@ -87,8 +87,8 @@ item
 #38-komada-modal-rewrite  
 #39-komada-alt-write  
 #40-umezawa-Top,AboutUsPage-Parallax   
-#41  
-#42  
-#43  
+#41-komada-img-resize  
+#42-komada-js-marge  
+#43-komada-comment-del  
 #44  
 #45  
