@@ -124,6 +124,9 @@ header{
         }
         >p{
             color: $base-color;
+            @include tab{
+                margin-right: 1rem;
+            }
         }
     }
     >#g-nav{
@@ -194,7 +197,7 @@ header{
         z-index: 5;
         @include tab{
             top: 2rem;
-            right: 15rem;
+            right: 17rem;
         }
         >a{
             display: block;
@@ -240,7 +243,6 @@ header.top-header{
             text-align: center;
             @include tab{
                 font-size: 2.8rem;
-                /* background-color: $base-color; */
             }
             &::before{
                 display: block;
