@@ -3,6 +3,7 @@
         >.key-visual{
             margin: 0 auto 9rem;
             padding: 0 12rem;
+            overflow-y: hidden;
             @include tab{
                 padding: 10rem 2rem 0;
             }

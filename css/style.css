@@ -618,6 +618,7 @@ header.top-header > h1 > a > span:nth-of-type(2) {
   padding: 4rem 12rem;
   position: relative;
   margin-bottom: 1rem;
+  overflow-y: hidden;
 }
 @media (max-width: 800px) {
   .top-page-key-visual {
@@ -983,32 +984,10 @@ header.top-header > h1 > a > span:nth-of-type(2) {
 }
 
 .top-about-us {
-  display: flex;
-  margin-top: 27rem;
-}
-@media (max-width: 800px) {
-  .top-about-us {
-    display: block;
-    padding: 0 2rem;
-    width: 80rem;
-    position: relative;
-    margin-top: 9rem;
-    margin-bottom: 85rem;
-  }
-}
-.top-about-us > .about-us-image {
-  width: 82.5rem;
-  height: 82.5rem;
   position: relative;
 }
-@media (max-width: 800px) {
-  .top-about-us > .about-us-image {
-    width: 69.5rem;
-    height: 60rem;
-    margin: 0 0 0 auto;
-  }
-}
-.top-about-us > .about-us-image::after {
+
+.top-about-us::after {
   display: block;
   content: "";
   background: url(/step/img/mizutama.gif) repeat;
@@ -1017,11 +996,55 @@ header.top-header > h1 > a > span:nth-of-type(2) {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
-  right: 0;
+  left: 0;
+  right: 11rem;
   margin: auto;
   z-index: -2;
 }
+
+@media (max-width: 800px) {
+  .top-about-us::after {
+    display: none;
+  }
+}
+
+.top-about-us > .top-about-us-wrapper {
+  display: flex;
+  margin-top: 27rem;
+  overflow-y: hidden;
+}
+@media (max-width: 800px) {
+  .top-about-us > .top-about-us-wrapper {
+    display: block;
+    padding: 0 2rem;
+    width: 80rem;
+    position: relative;
+    margin-top: 9rem;
+    margin-bottom: 85rem;
+    overflow-y: visible;
+  }
+}
+.top-about-us > .top-about-us-wrapper > .about-us-image {
+  width: 82.5rem;
+  height: 82.5rem;
+  position: relative;
+  z-index: -1;
+}
+@media (max-width: 800px) {
+  .top-about-us > .top-about-us-wrapper > .about-us-image {
+    width: 69.5rem;
+    height: 60rem;
+    margin: 0 0 0 auto;
+  }
+}
+.top-about-us > .top-about-us-wrapper > .about-us-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.top-about-us > .top-about-us-wrapper > .about-us-box {
+  padding: 0 0 3rem 4.5rem;
+  }
 @media (max-width: 800px) {
   .top-about-us > .about-us-image::after {
     display: none;
@@ -1031,11 +1054,8 @@ header.top-header > h1 > a > span:nth-of-type(2) {
   width: 100%;
   height: 100%;
 }
-.top-about-us > .about-us-box {
-  padding: 0 0 3rem 4.5rem;
-}
 @media (max-width: 800px) {
-  .top-about-us > .about-us-box {
+  .top-about-us > .top-about-us-wrapper > .about-us-box {
     background-color: #fff;
     width: 71.5rem;
     padding: 0 2rem 3rem 4.5rem;
@@ -1044,7 +1064,7 @@ header.top-header > h1 > a > span:nth-of-type(2) {
     left: 0;
   }
 }
-.top-about-us > .about-us-box > h2 {
+.top-about-us > .top-about-us-wrapper > .about-us-box > h2 {
   font-size: 10.4rem;
   color: #44768c;
   line-height: 0.7;
@@ -1053,12 +1073,12 @@ header.top-header > h1 > a > span:nth-of-type(2) {
   margin-bottom: 2.4rem;
 }
 @media (max-width: 800px) {
-  .top-about-us > .about-us-box > h2 {
+  .top-about-us > .top-about-us-wrapper > .about-us-box > h2 {
     font-size: 10rem;
     padding: 4rem 0;
   }
 }
-.top-about-us > .about-us-box > h2::after {
+.top-about-us > .top-about-us-wrapper > .about-us-box > h2::after {
   display: block;
   content: "";
   width: 53rem;
@@ -1069,58 +1089,58 @@ header.top-header > h1 > a > span:nth-of-type(2) {
   left: 15.5rem;
 }
 @media (max-width: 800px) {
-  .top-about-us > .about-us-box > h2::after {
+  .top-about-us > .top-about-us-wrapper > .about-us-box > h2::after {
     width: 49rem;
   }
 }
-.top-about-us > .about-us-box > h2 > span {
+.top-about-us > .top-about-us-wrapper > .about-us-box > h2 > span {
   font-size: 5.6rem;
   color: #333;
   font-weight: bold;
   padding-left: 15.5rem;
 }
 @media (max-width: 800px) {
-  .top-about-us > .about-us-box > h2 > span {
+  .top-about-us > .top-about-us-wrapper > .about-us-box > h2 > span {
     font-size: 5rem;
   }
 }
-.top-about-us > .about-us-box > .about-us-txt > p {
+.top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-txt > p {
   font-size: 3.3rem;
   font-weight: bold;
   color: #333;
   line-height: 2;
   text-align: right;
 }
-.top-about-us > .about-us-box > .about-us-txt > p:first-of-type {
+.top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-txt > p:first-of-type {
   padding-bottom: 7rem;
 }
 @media (max-width: 800px) {
-  .top-about-us > .about-us-box > .about-us-txt > p:first-of-type {
+  .top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-txt > p:first-of-type {
     padding-bottom: 0;
   }
 }
-.top-about-us > .about-us-box > .about-us-txt > p:nth-of-type(2) {
+.top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-txt > p:nth-of-type(2) {
   margin-bottom: 6rem;
 }
 @media (max-width: 800px) {
-  .top-about-us > .about-us-box > .about-us-txt > p:nth-of-type(2) {
+  .top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-txt > p:nth-of-type(2) {
     margin-bottom: 4rem;
   }
 }
-.top-about-us > .about-us-box > .about-us-btn {
+.top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-btn {
   width: 25rem;
   height: 8rem;
   position: relative;
   margin: 0 0 0 auto;
 }
 @media (max-width: 800px) {
-  .top-about-us > .about-us-box > .about-us-btn {
+  .top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-btn {
     margin: 0 auto 0 23.5rem;
     width: 24rem;
     height: 6rem;
   }
 }
-.top-about-us > .about-us-box > .about-us-btn > a {
+.top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-btn > a {
   display: block;
   font-size: 1.8rem;
   background-color: #fff;
@@ -1133,19 +1153,21 @@ header.top-header > h1 > a > span:nth-of-type(2) {
   transition: 0.4s;
 }
 @media (max-width: 800px) {
-  .top-about-us > .about-us-box > .about-us-btn > a {
+  .top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-btn > a {
     width: 24rem;
     height: 6rem;
     line-height: 6rem;
   }
 }
-.top-about-us > .about-us-box > .about-us-btn > a:hover {
+.top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-btn > a:hover {
   transform: translate(-0.5rem, -0.5rem);
 }
-.top-about-us > .about-us-box > .about-us-btn > a:hover ~ .button-shadow {
+
+.top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-btn > a:hover ~ .button-shadow {
   transform: translate(0.5rem, 0.5rem);
 }
-.top-about-us > .about-us-box > .about-us-btn > .button-shadow {
+
+.top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-btn > .button-shadow {
   width: 25rem;
   height: 8rem;
   background-color: #44768c;
@@ -1159,7 +1181,7 @@ header.top-header > h1 > a > span:nth-of-type(2) {
   transition: 0.4s;
 }
 @media (max-width: 800px) {
-  .top-about-us > .about-us-box > .about-us-btn > .button-shadow {
+  .top-about-us > .top-about-us-wrapper > .about-us-box > .about-us-btn > .button-shadow {
     width: 24rem;
     height: 6rem;
   }
@@ -1174,7 +1196,6 @@ header.top-header > h1 > a > span:nth-of-type(2) {
 @media (max-width: 800px) {
   .company {
     display: block;
-    /* background-color: lightgreen; */
     padding-top: 6rem;
     padding-left: 2rem;
     margin-bottom: 65rem;
@@ -1187,7 +1208,7 @@ header.top-header > h1 > a > span:nth-of-type(2) {
   height: 86.1rem;
   background: url(/step/img/mizutama.gif) repeat;
   position: absolute;
-  top: 0;
+  top: 8rem;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1225,7 +1246,6 @@ header.top-header > h1 > a > span:nth-of-type(2) {
     width: 65.1rem;
     height: auto;
     padding: 2.4rem 2.8rem 0 4.5rem;
-    /* background-color: lightsalmon; */
     position: absolute;
     top: 60rem;
     right: 0;
@@ -1366,6 +1386,7 @@ footer > a > p .br-sp {
 .about-us > .key-visual {
   margin: 0 auto 9rem;
   padding: 0 12rem;
+  overflow-y: hidden;
 }
 @media (max-width: 800px) {
   .about-us > .key-visual {
@@ -1464,9 +1485,11 @@ footer > a > p .br-sp {
 .about-us > .philosophy {
   max-width: 192rem;
   height: 83rem;
-  background: url(/step/img/about-us-pc/step.jpg) no-repeat center center/cover;
+  overflow-y: hidden;
+  /* background: url(/step/img/about-us-pc/step.jpg)no-repeat center center/cover; */
   margin: 0 auto 7.1rem;
   padding: 4.2rem 12rem 4.9rem;
+  position: relative;
 }
 @media (max-width: 800px) {
   .about-us > .philosophy {
@@ -1540,6 +1563,18 @@ footer > a > p .br-sp {
   .about-us > .philosophy > ul > li:last-of-type {
     padding-left: 0;
   }
+}
+
+.about-us > .philosophy > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -5;
 }
 
 .about-us > .members {

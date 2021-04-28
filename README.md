@@ -86,7 +86,7 @@ item
 #37-komada-form-thanks  
 #38-komada-modal-rewrite  
 #39-komada-alt-write  
-#40  
+#40-umezawa-Top,AboutUsPage-Parallax   
 #41  
 #42  
 #43  

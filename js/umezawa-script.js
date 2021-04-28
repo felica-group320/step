@@ -28,3 +28,12 @@ $(window).scroll(function() {
 $('#logo-wrapper').on('click',function(){
     $('html,body').animate({scrollTop:0},1000);
   });
+
+  var rellax = new Rellax('.rellax', {
+    speed: -1,
+    center: false,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
