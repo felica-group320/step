@@ -91,4 +91,4 @@ item
 #42-komada-js-marge  
 #43-komada-comment-del  
 #44-komada-contact-js-re  
-#45  
+#45-komada-img-rename  
